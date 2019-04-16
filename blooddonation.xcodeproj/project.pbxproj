@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A97CEDA322666E0F008C674F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97CEDA222666E0F008C674F /* AppDelegate.swift */; };
+		A97CEDA522666E0F008C674F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97CEDA422666E0F008C674F /* ViewController.swift */; };
+		A97CEDA822666E0F008C674F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97CEDA622666E0F008C674F /* Main.storyboard */; };
+		A97CEDAA22666E12008C674F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A97CEDA922666E12008C674F /* Assets.xcassets */; };
+		A97CEDAD22666E12008C674F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97CEDAB22666E12008C674F /* LaunchScreen.storyboard */; };
+		A97CEDB822666E12008C674F /* blooddonationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97CEDB722666E12008C674F /* blooddonationTests.swift */; };
+		A97CEDC322666E12008C674F /* blooddonationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97CEDC222666E12008C674F /* blooddonationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A97CEDB422666E12008C674F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A97CED9722666E0F008C674F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A97CED9E22666E0F008C674F;
+			remoteInfo = blooddonation;
+		};
+		A97CEDBF22666E12008C674F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A97CED9722666E0F008C674F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A97CED9E22666E0F008C674F;
+			remoteInfo = blooddonation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A97CED9F22666E0F008C674F /* blooddonation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blooddonation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97CEDA222666E0F008C674F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A97CEDA422666E0F008C674F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A97CEDA722666E0F008C674F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A97CEDA922666E12008C674F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A97CEDAC22666E12008C674F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A97CEDAE22666E12008C674F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97CEDB322666E12008C674F /* blooddonationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blooddonationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97CEDB722666E12008C674F /* blooddonationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blooddonationTests.swift; sourceTree = "<group>"; };
+		A97CEDB922666E12008C674F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97CEDBE22666E12008C674F /* blooddonationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blooddonationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97CEDC222666E12008C674F /* blooddonationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blooddonationUITests.swift; sourceTree = "<group>"; };
+		A97CEDC422666E12008C674F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A97CED9C22666E0F008C674F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97CEDB022666E12008C674F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97CEDBB22666E12008C674F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A97CED9622666E0F008C674F = {
+			isa = PBXGroup;
+			children = (
+				A97CEDA122666E0F008C674F /* blooddonation */,
+				A97CEDB622666E12008C674F /* blooddonationTests */,
+				A97CEDC122666E12008C674F /* blooddonationUITests */,
+				A97CEDA022666E0F008C674F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A97CEDA022666E0F008C674F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A97CED9F22666E0F008C674F /* blooddonation.app */,
+				A97CEDB322666E12008C674F /* blooddonationTests.xctest */,
+				A97CEDBE22666E12008C674F /* blooddonationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A97CEDA122666E0F008C674F /* blooddonation */ = {
+			isa = PBXGroup;
+			children = (
+				A97CEDA222666E0F008C674F /* AppDelegate.swift */,
+				A97CEDA422666E0F008C674F /* ViewController.swift */,
+				A97CEDA622666E0F008C674F /* Main.storyboard */,
+				A97CEDA922666E12008C674F /* Assets.xcassets */,
+				A97CEDAB22666E12008C674F /* LaunchScreen.storyboard */,
+				A97CEDAE22666E12008C674F /* Info.plist */,
+			);
+			path = blooddonation;
+			sourceTree = "<group>";
+		};
+		A97CEDB622666E12008C674F /* blooddonationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A97CEDB722666E12008C674F /* blooddonationTests.swift */,
+				A97CEDB922666E12008C674F /* Info.plist */,
+			);
+			path = blooddonationTests;
+			sourceTree = "<group>";
+		};
+		A97CEDC122666E12008C674F /* blooddonationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A97CEDC222666E12008C674F /* blooddonationUITests.swift */,
+				A97CEDC422666E12008C674F /* Info.plist */,
+			);
+			path = blooddonationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A97CED9E22666E0F008C674F /* blooddonation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97CEDC722666E12008C674F /* Build configuration list for PBXNativeTarget "blooddonation" */;
+			buildPhases = (
+				A97CED9B22666E0F008C674F /* Sources */,
+				A97CED9C22666E0F008C674F /* Frameworks */,
+				A97CED9D22666E0F008C674F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = blooddonation;
+			productName = blooddonation;
+			productReference = A97CED9F22666E0F008C674F /* blooddonation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A97CEDB222666E12008C674F /* blooddonationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97CEDCA22666E12008C674F /* Build configuration list for PBXNativeTarget "blooddonationTests" */;
+			buildPhases = (
+				A97CEDAF22666E12008C674F /* Sources */,
+				A97CEDB022666E12008C674F /* Frameworks */,
+				A97CEDB122666E12008C674F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A97CEDB522666E12008C674F /* PBXTargetDependency */,
+			);
+			name = blooddonationTests;
+			productName = blooddonationTests;
+			productReference = A97CEDB322666E12008C674F /* blooddonationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A97CEDBD22666E12008C674F /* blooddonationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97CEDCD22666E12008C674F /* Build configuration list for PBXNativeTarget "blooddonationUITests" */;
+			buildPhases = (
+				A97CEDBA22666E12008C674F /* Sources */,
+				A97CEDBB22666E12008C674F /* Frameworks */,
+				A97CEDBC22666E12008C674F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A97CEDC022666E12008C674F /* PBXTargetDependency */,
+			);
+			name = blooddonationUITests;
+			productName = blooddonationUITests;
+			productReference = A97CEDBE22666E12008C674F /* blooddonationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A97CED9722666E0F008C674F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Esprit;
+				TargetAttributes = {
+					A97CED9E22666E0F008C674F = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					A97CEDB222666E12008C674F = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A97CED9E22666E0F008C674F;
+					};
+					A97CEDBD22666E12008C674F = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A97CED9E22666E0F008C674F;
+					};
+				};
+			};
+			buildConfigurationList = A97CED9A22666E0F008C674F /* Build configuration list for PBXProject "blooddonation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A97CED9622666E0F008C674F;
+			productRefGroup = A97CEDA022666E0F008C674F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A97CED9E22666E0F008C674F /* blooddonation */,
+				A97CEDB222666E12008C674F /* blooddonationTests */,
+				A97CEDBD22666E12008C674F /* blooddonationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A97CED9D22666E0F008C674F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97CEDAD22666E12008C674F /* LaunchScreen.storyboard in Resources */,
+				A97CEDAA22666E12008C674F /* Assets.xcassets in Resources */,
+				A97CEDA822666E0F008C674F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97CEDB122666E12008C674F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97CEDBC22666E12008C674F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A97CED9B22666E0F008C674F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97CEDA522666E0F008C674F /* ViewController.swift in Sources */,
+				A97CEDA322666E0F008C674F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97CEDAF22666E12008C674F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97CEDB822666E12008C674F /* blooddonationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97CEDBA22666E12008C674F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97CEDC322666E12008C674F /* blooddonationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A97CEDB522666E12008C674F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A97CED9E22666E0F008C674F /* blooddonation */;
+			targetProxy = A97CEDB422666E12008C674F /* PBXContainerItemProxy */;
+		};
+		A97CEDC022666E12008C674F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A97CED9E22666E0F008C674F /* blooddonation */;
+			targetProxy = A97CEDBF22666E12008C674F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A97CEDA622666E0F008C674F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A97CEDA722666E0F008C674F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A97CEDAB22666E12008C674F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A97CEDAC22666E12008C674F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A97CEDC522666E12008C674F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A97CEDC622666E12008C674F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A97CEDC822666E12008C674F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = blooddonation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boostiny.app.blooddonation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A97CEDC922666E12008C674F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = blooddonation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boostiny.app.blooddonation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A97CEDCB22666E12008C674F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = blooddonationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boostiny.app.blooddonationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/blooddonation.app/blooddonation";
+			};
+			name = Debug;
+		};
+		A97CEDCC22666E12008C674F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = blooddonationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boostiny.app.blooddonationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/blooddonation.app/blooddonation";
+			};
+			name = Release;
+		};
+		A97CEDCE22666E12008C674F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = blooddonationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boostiny.app.blooddonationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = blooddonation;
+			};
+			name = Debug;
+		};
+		A97CEDCF22666E12008C674F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = blooddonationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boostiny.app.blooddonationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = blooddonation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A97CED9A22666E0F008C674F /* Build configuration list for PBXProject "blooddonation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97CEDC522666E12008C674F /* Debug */,
+				A97CEDC622666E12008C674F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97CEDC722666E12008C674F /* Build configuration list for PBXNativeTarget "blooddonation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97CEDC822666E12008C674F /* Debug */,
+				A97CEDC922666E12008C674F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97CEDCA22666E12008C674F /* Build configuration list for PBXNativeTarget "blooddonationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97CEDCB22666E12008C674F /* Debug */,
+				A97CEDCC22666E12008C674F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97CEDCD22666E12008C674F /* Build configuration list for PBXNativeTarget "blooddonationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97CEDCE22666E12008C674F /* Debug */,
+				A97CEDCF22666E12008C674F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A97CED9722666E0F008C674F /* Project object */;
+}
