@@ -13,6 +13,7 @@ target 'blooddonation' do
   pod 'FacebookShare'
   pod 'Alamofire'
   pod 'AlamofireImage'
+  pod 'GoogleSignIn'
 
   target 'blooddonationTests' do
     inherit! :search_paths

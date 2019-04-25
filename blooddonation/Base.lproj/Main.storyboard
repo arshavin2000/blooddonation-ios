@@ -34,21 +34,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hx-1f-dq9">
-                                <rect key="frame" x="88.5" y="426" width="237" height="44"/>
+                                <rect key="frame" x="199" y="437" width="16" height="22"/>
                                 <state key="normal" image="facebook"/>
                                 <connections>
                                     <action selector="facebook_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hx6-UJ-tx2"/>
-                                    <segue destination="YXb-6E-9fr" kind="show" identifier="facebook" id="Aqv-Il-VJ1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffy-pG-jZ1">
-                                <rect key="frame" x="88.5" y="496" width="237.00000000000006" height="44"/>
+                                <rect key="frame" x="199" y="510" width="16" height="16"/>
                                 <state key="normal" backgroundImage="google">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="google_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sGt-XZ-8BC"/>
-                                    <segue destination="YXb-6E-9fr" kind="show" identifier="google" id="F0R-dR-cTO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,16 +70,17 @@
                     <connections>
                         <outlet property="facebook_button" destination="7Hx-1f-dq9" id="Lca-T3-vqi"/>
                         <outlet property="google_button" destination="Ffy-pG-jZ1" id="QKH-m4-YpW"/>
+                        <segue destination="YXb-6E-9fr" kind="show" identifier="login" id="ZGm-gd-lDy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125" y="102"/>
+            <point key="canvasLocation" x="257" y="115"/>
         </scene>
-        <!--View Controller-->
+        <!--Become Donor View Controller-->
         <scene sceneID="MMw-Me-LZS">
             <objects>
-                <viewController id="YXb-6E-9fr" sceneMemberID="viewController">
+                <viewController id="YXb-6E-9fr" customClass="BecomeDonorViewController" customModule="blooddonation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IhV-a8-AkX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,6 +88,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="18" background="edit_text_bg" translatesAutoresizingMaskIntoConstraints="NO" id="nRc-jT-Ac9">
                                 <rect key="frame" x="20" y="102" width="374" height="30"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Kjo-fN-jFm">
@@ -150,8 +150,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCa-zH-26J">
-                                <rect key="frame" x="48.5" y="762" width="317" height="50"/>
+                                <rect key="frame" x="185.5" y="762" width="43" height="22"/>
                                 <state key="normal" title="Done" backgroundImage="button_bg"/>
+                                <connections>
+                                    <action selector="done_action:" destination="YXb-6E-9fr" eventType="touchUpInside" id="NCY-Ba-1nQ"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1dO-sv-ZTj">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -191,6 +194,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dhg-qB-YAy"/>
                     </view>
+                    <connections>
+                        <outlet property="blood_group" destination="hQn-Rg-okz" id="gBC-En-MFn"/>
+                        <outlet property="done_button" destination="qCa-zH-26J" id="NXZ-JO-91f"/>
+                        <outlet property="email_text" destination="Kjo-fN-jFm" id="0bx-84-jGd"/>
+                        <outlet property="gender" destination="vmL-v6-Uhx" id="DnH-03-nm6"/>
+                        <outlet property="name_text" destination="nRc-jT-Ac9" id="Lr2-Fm-Hqm"/>
+                        <outlet property="number_text" destination="ZhH-Xm-sBu" id="XoA-5P-90c"/>
+                        <outlet property="terms" destination="i7P-n8-sfF" id="58L-iv-Lbo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOq-wL-MYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,7 +218,4 @@
         <image name="google" width="237" height="44"/>
         <image name="male" width="47.5" height="47.5"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="F0R-dR-cTO"/>
-    </inferredMetricsTieBreakers>
 </document>

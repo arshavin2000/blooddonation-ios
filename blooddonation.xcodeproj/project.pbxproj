@@ -17,6 +17,8 @@
 		A97CEDC322666E12008C674F /* blooddonationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97CEDC222666E12008C674F /* blooddonationUITests.swift */; };
 		A9CA74F82271FF2400524493 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA74F72271FF2400524493 /* LoginViewController.swift */; };
 		A9CA74FD2272148F00524493 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA74FC2272148F00524493 /* User.swift */; };
+		A9CA74FF22721E4D00524493 /* BecomeDonorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA74FE22721E4D00524493 /* BecomeDonorViewController.swift */; };
+		A9CA750222721EDD00524493 /* blooddonation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9CA750022721EDD00524493 /* blooddonation.xcdatamodeld */; };
 		B6C665394712DC6457B8D919 /* Pods_blooddonationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2D462421FAF9CE0F74CF24 /* Pods_blooddonationTests.framework */; };
 		D2C8E7CC3E6DEEB3F9A138EC /* Pods_blooddonation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1F172B69D445DDC8E516C2 /* Pods_blooddonation.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,8 @@
 		A97CEDC422666E12008C674F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9CA74F72271FF2400524493 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A9CA74FC2272148F00524493 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A9CA74FE22721E4D00524493 /* BecomeDonorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeDonorViewController.swift; sourceTree = "<group>"; };
+		A9CA750122721EDD00524493 /* blooddonation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = blooddonation.xcdatamodel; sourceTree = "<group>"; };
 		BCDB69DB237B8B21D05A572C /* Pods-blooddonationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blooddonationUITests.release.xcconfig"; path = "Target Support Files/Pods-blooddonationUITests/Pods-blooddonationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D38D27A2540CA2D942CBBE58 /* Pods-blooddonation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blooddonation.release.xcconfig"; path = "Target Support Files/Pods-blooddonation/Pods-blooddonation.release.xcconfig"; sourceTree = "<group>"; };
 		FC1C72E4D981508992D9A16D /* Pods-blooddonationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blooddonationTests.debug.xcconfig"; path = "Target Support Files/Pods-blooddonationTests/Pods-blooddonationTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				A97CEDAB22666E12008C674F /* LaunchScreen.storyboard */,
 				A97CEDAE22666E12008C674F /* Info.plist */,
 				A9CA74F72271FF2400524493 /* LoginViewController.swift */,
+				A9CA74FE22721E4D00524493 /* BecomeDonorViewController.swift */,
+				A9CA750022721EDD00524493 /* blooddonation.xcdatamodeld */,
 			);
 			path = blooddonation;
 			sourceTree = "<group>";
@@ -191,6 +197,7 @@
 				A97CED9C22666E0F008C674F /* Frameworks */,
 				A97CED9D22666E0F008C674F /* Resources */,
 				0B73C4CC360ECE88A4078A9F /* [CP] Embed Pods Frameworks */,
+				502B5E6C28E43BB4D846ADCA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,6 +335,8 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -342,6 +351,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -392,6 +403,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		502B5E6C28E43BB4D846ADCA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-blooddonation/Pods-blooddonation-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-blooddonation/Pods-blooddonation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DBD474EF6698CD0B228AF2C7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,6 +457,8 @@
 				A9CA74FD2272148F00524493 /* User.swift in Sources */,
 				A9CA74F82271FF2400524493 /* LoginViewController.swift in Sources */,
 				A97CEDA522666E0F008C674F /* ViewController.swift in Sources */,
+				A9CA74FF22721E4D00524493 /* BecomeDonorViewController.swift in Sources */,
+				A9CA750222721EDD00524493 /* blooddonation.xcdatamodeld in Sources */,
 				A97CEDA322666E0F008C674F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -755,6 +790,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A9CA750022721EDD00524493 /* blooddonation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A9CA750122721EDD00524493 /* blooddonation.xcdatamodel */,
+			);
+			currentVersion = A9CA750122721EDD00524493 /* blooddonation.xcdatamodel */;
+			path = blooddonation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A97CED9722666E0F008C674F /* Project object */;
 }
