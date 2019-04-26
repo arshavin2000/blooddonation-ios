@@ -41,4 +41,25 @@ class User
     var request: String
     var rate: String
     
+    
+    internal init?() {
+        
+        
+        id = ""
+        firstname = ""
+        email = ""
+        lastname = ""
+        gender = ""
+        bloodGroup = ""
+        birthDate = ""
+        urlImage = ""
+        number = ""
+        request = ""
+        answer = ""
+        rate = ""
+       
+        
+    }
+    
+    
 }

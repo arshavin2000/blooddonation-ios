@@ -118,6 +118,9 @@
                                     <segment title="" image="male" width="64"/>
                                     <segment title="" image="female"/>
                                 </segments>
+                                <connections>
+                                    <action selector="genderAction:" destination="YXb-6E-9fr" eventType="valueChanged" id="0hQ-r1-CyE"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Select Blood group " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="xhX-mC-7Re">
                                 <rect key="frame" x="30" y="456" width="181" height="30"/>
@@ -138,10 +141,16 @@
                                     <segment title="AB-"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="0.12941176470588234" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="blood_groupAction:" destination="YXb-6E-9fr" eventType="valueChanged" id="Kim-eg-Snt"/>
+                                </connections>
                             </segmentedControl>
                             <switch opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i7P-n8-sfF">
                                 <rect key="frame" x="30" y="670" width="51" height="31"/>
                                 <color key="onTintColor" red="1" green="0.12941176469999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="termsAction:" destination="YXb-6E-9fr" eventType="valueChanged" id="XoU-HC-hxS"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accept our use of terms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ql-zQ-v6V">
                                 <rect key="frame" x="107.5" y="675" width="199" height="22"/>

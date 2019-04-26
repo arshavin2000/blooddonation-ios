@@ -14,7 +14,9 @@ class BecomeDonorViewController: UIViewController {
     var firstname : String!
     var lastname : String!
     var picture : String!
-    var userId : String! 
+    var userId : String!
+    var genderType : String! = "male"
+    var bloodGroup : String! = "A+"
 
     @IBOutlet weak var name_text: UITextField!
     @IBOutlet weak var email_text: UITextField!
@@ -50,6 +52,70 @@ class BecomeDonorViewController: UIViewController {
     }
     */
     @IBAction func done_action(_ sender: Any) {
+        let user = User ()
+        user?.id = userId
+        user?.email = email
+        user?.firstname = firstname
+        user?.lastname = lastname
+        user?.urlImage = picture
+        user?.bloodGroup = bloodGroup
+        user?.gender = genderType
+        user?.number = number_text.text!
+
+        DonorService.addDonor(user : user!)
+        
     }
     
+    @IBAction func genderAction(_ sender: Any) {
+        
+        switch gender.selectedSegmentIndex {
+        case 0:
+            genderType = "male"
+            break
+        case 1 :
+            genderType = "female"
+            break
+        default:
+            genderType = "male"
+            break
+        }
+    }
+    
+    @IBAction func blood_groupAction(_ sender: Any) {
+        
+        switch blood_group.selectedSegmentIndex {
+        case 0:
+            bloodGroup = "A+"
+            break
+        case 1 :
+            bloodGroup = "A-"
+            break
+        case 2:
+            bloodGroup = "B+"
+            break
+        case 3:
+            bloodGroup = "B-"
+            break
+        case 4 :
+            bloodGroup = "O+"
+            break
+        case 5:
+            bloodGroup = "O-"
+            break
+        case 6 :
+            bloodGroup = "AB+"
+            break
+        case 7 :
+            bloodGroup = "AB-"
+            break
+        default:
+            genderType = "A"
+            break
+        }
+    }
+    
+    @IBAction func termsAction(_ sender: Any) {
+        
+    
+    }
 }

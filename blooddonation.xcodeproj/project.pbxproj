@@ -19,6 +19,8 @@
 		A9CA74FD2272148F00524493 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA74FC2272148F00524493 /* User.swift */; };
 		A9CA74FF22721E4D00524493 /* BecomeDonorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA74FE22721E4D00524493 /* BecomeDonorViewController.swift */; };
 		A9CA750222721EDD00524493 /* blooddonation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9CA750022721EDD00524493 /* blooddonation.xcdatamodeld */; };
+		A9CA750522727DC700524493 /* DonorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA750422727DC700524493 /* DonorService.swift */; };
+		A9CA750822727E3900524493 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA750722727E3900524493 /* Utility.swift */; };
 		B6C665394712DC6457B8D919 /* Pods_blooddonationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2D462421FAF9CE0F74CF24 /* Pods_blooddonationTests.framework */; };
 		D2C8E7CC3E6DEEB3F9A138EC /* Pods_blooddonation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1F172B69D445DDC8E516C2 /* Pods_blooddonation.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,8 @@
 		A9CA74FC2272148F00524493 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A9CA74FE22721E4D00524493 /* BecomeDonorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeDonorViewController.swift; sourceTree = "<group>"; };
 		A9CA750122721EDD00524493 /* blooddonation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = blooddonation.xcdatamodel; sourceTree = "<group>"; };
+		A9CA750422727DC700524493 /* DonorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorService.swift; sourceTree = "<group>"; };
+		A9CA750722727E3900524493 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		BCDB69DB237B8B21D05A572C /* Pods-blooddonationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blooddonationUITests.release.xcconfig"; path = "Target Support Files/Pods-blooddonationUITests/Pods-blooddonationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D38D27A2540CA2D942CBBE58 /* Pods-blooddonation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blooddonation.release.xcconfig"; path = "Target Support Files/Pods-blooddonation/Pods-blooddonation.release.xcconfig"; sourceTree = "<group>"; };
 		FC1C72E4D981508992D9A16D /* Pods-blooddonationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blooddonationTests.debug.xcconfig"; path = "Target Support Files/Pods-blooddonationTests/Pods-blooddonationTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 		A97CEDA122666E0F008C674F /* blooddonation */ = {
 			isa = PBXGroup;
 			children = (
+				A9CA750622727E1F00524493 /* utility */,
+				A9CA750322727DA000524493 /* service */,
 				A9CA74FB2272147C00524493 /* model */,
 				A97CEDA222666E0F008C674F /* AppDelegate.swift */,
 				A97CEDA422666E0F008C674F /* ViewController.swift */,
@@ -183,6 +189,22 @@
 				A9CA74FC2272148F00524493 /* User.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		A9CA750322727DA000524493 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA750422727DC700524493 /* DonorService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		A9CA750622727E1F00524493 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA750722727E3900524493 /* Utility.swift */,
+			);
+			path = utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,7 +480,9 @@
 				A9CA74F82271FF2400524493 /* LoginViewController.swift in Sources */,
 				A97CEDA522666E0F008C674F /* ViewController.swift in Sources */,
 				A9CA74FF22721E4D00524493 /* BecomeDonorViewController.swift in Sources */,
+				A9CA750822727E3900524493 /* Utility.swift in Sources */,
 				A9CA750222721EDD00524493 /* blooddonation.xcdatamodeld in Sources */,
+				A9CA750522727DC700524493 /* DonorService.swift in Sources */,
 				A97CEDA322666E0F008C674F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

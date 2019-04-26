@@ -102,7 +102,8 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
                         self.email = value.dictionaryValue!["email"] as! String;
                         self.firstname = value.dictionaryValue!["first_name"] as! String
                         self.lastname = value.dictionaryValue!["last_name"] as! String
-                        
+                        self.userId = value.dictionaryValue!["id"] as! String
+
                         self.picture  = "http://graph.facebook.com/\(value.dictionaryValue!["id"] as! String)/picture?type=large"
                     }
                     
@@ -215,6 +216,7 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
         becomeDonor.firstname = self.firstname
         becomeDonor.lastname = self.lastname
         becomeDonor.picture = self.picture
+        becomeDonor.userId = self.userId
         
     }
     
