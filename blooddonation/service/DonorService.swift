@@ -10,9 +10,16 @@ import UIKit
 import Alamofire
 import CoreData
 
+extension Array where Element == String? {
+    func compactConcate(separator: String) -> String {
+        return self.compactMap { $0 }.filter { !$0.isEmpty }.joined(separator: separator)
+    }
+}
 
 class DonorService
 {
+    
+    
     // add user in the datbase
    static func addDonor(user : User) -> Void {
         let parameters = ["id":user.id,"firstname":user.firstname,"lastname":user.lastname,"email":user.email,"number":user.number,"url":user.urlImage
@@ -39,6 +46,8 @@ class DonorService
         }
     }
     
+    
+    // store user in the data base
     static func addDonorLocal(user :User) -> Void {
         
         guard let appDelegate =
@@ -79,7 +88,41 @@ class DonorService
          }*/
         
     }
+    
+    static func isUserExist(id: String, completion:@escaping (Bool) -> ()) -> Void {
+        let url  = [Utility.basicUrl , "/" , id].compactConcate(separator: "")
+        Alamofire.request( url , method: .get ,encoding: JSONEncoding.default ).responseJSON { response in
+            
+            switch response.result {
+                
+            case .success(let JSON):
+                
+                
+                let response = JSON as! NSDictionary
+                print("JSON",JSON)
+                let data = response.object(forKey: "data") as! Int8
+                
+                if(data == 1)
+                {
+                    completion(true)
+                }else {
+                    completion(false)
+                }
+                
+                //self.addDonorLocal(user: user)
+                
+                //   print("JSON", accessToken[1])
+                
+                
+            case .failure(let error):
+                print("ERROR",error.localizedDescription)
+                completion(true)
+            }
+        }
+
+    
     }
+}
 
     
 

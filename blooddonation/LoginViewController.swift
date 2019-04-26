@@ -116,11 +116,18 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
                     southZone.sync {
                         if (AccessToken.current != nil )
                         {
-                            print("achref",self.email)
-                            
-                            self.performSegue(withIdentifier: "login", sender: nil)
-                            
-                        }
+                            DonorService.isUserExist(id: self.userId, completion: { (success) in
+                                
+                                if(!success)
+                                {
+                                    self.performSegue(withIdentifier: "login", sender: nil)
+
+                                }
+                                else{
+                                    
+                                }
+                            })
+                    }
                     }
 
                     
@@ -168,9 +175,17 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
 
                                 if (AccessToken.current != nil)
                                 {
-                                    print("achref",self.email)
-
-                                    self.performSegue(withIdentifier: "login", sender: nil)
+                                    DonorService.isUserExist(id: self.userId, completion: { (success) in
+                                        
+                                        if(!success)
+                                        {
+                                            self.performSegue(withIdentifier: "login", sender: nil)
+                                            
+                                        }
+                                        else{
+                                            
+                                        }
+                                    })
                                     
                                 }        }
                             
@@ -201,8 +216,17 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
              self.firstname = user.profile.givenName
              self.lastname = user.profile.familyName
              self.email = user.profile.email
-             self.performSegue(withIdentifier: "login", sender: nil)
-
+            DonorService.isUserExist(id: self.userId, completion: { (success) in
+                
+                if(!success)
+                {
+                    self.performSegue(withIdentifier: "login", sender: nil)
+                    
+                }
+                else{
+                    
+                }
+            })
             
 
         }
