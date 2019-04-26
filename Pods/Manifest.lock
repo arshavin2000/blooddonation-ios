@@ -27,6 +27,7 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.44.1):
     - FBSDKCoreKit
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -34,6 +35,7 @@ DEPENDENCIES:
   - FacebookCore
   - FacebookLogin
   - FacebookShare
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -46,6 +48,7 @@ SPEC REPOS:
     - FBSDKCoreKit
     - FBSDKLoginKit
     - FBSDKShareKit
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -57,7 +60,8 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: a823ae35bdb60ebb8d7a7e51abe7c5d87d2bfced
   FBSDKLoginKit: 54ae59987f2a8703021557c90a9aebb9e5c2bef6
   FBSDKShareKit: 526d4cfb713d24855fa23d0dd74e191accd3a720
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: aad0be839c0b26c2781b0f11da29c234e25ecc68
+PODFILE CHECKSUM: 752dd6d9086e124d7d4a64a875d9047ecacf465f
 
 COCOAPODS: 1.6.1

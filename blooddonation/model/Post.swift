@@ -14,14 +14,15 @@ class Post {
     var description:String?
     var date:String?
     var imgProfile:String
-    var imgPost:String?
+    var imgPost:String
     
     init(username:String,description:String,date:String,imgProfile:String,imgPost:String) {
         self.username = username;
         self.description = description;
         self.date = date;
         self.imgProfile = imgProfile;
-      
+        self.imgPost = imgPost;
+
     }
 
 }
