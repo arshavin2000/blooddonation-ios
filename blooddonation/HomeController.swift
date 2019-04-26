@@ -7,11 +7,12 @@
 //
 
 import UIKit
-
+import SwiftyJSON
 class HomeController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     var posts = Array<Post>();
-    
+    var jsonRep:JSON = JSON();
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
@@ -20,27 +21,59 @@ class HomeController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let cell:UIPostCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! UIPostCell
         cell.laDate.text = posts[indexPath.row].date
         cell.laUsername.text = posts[indexPath.row].username
-     
+
+        let urlImgPost = URL(string: posts[indexPath.row].imgPost)
+        let urlImgProfile = URL(string: posts[indexPath.row].imgProfile)
+
+        let dataImgPost = try? Data(contentsOf: urlImgPost!)
+        let dataImgProfile = try? Data(contentsOf: urlImgProfile!)
+        
+        
+        if dataImgPost != nil {
+            cell.laPostImg.image = UIImage(data: dataImgPost!)
+
+        }
+        else {
+            cell.laPostImg.image = UIImage(named: "image-not-available")
+
+        }
+        
+        cell.laProfilImg.image = UIImage(data: dataImgProfile!)
+        
         return cell
     }
     
     
 
     @IBOutlet weak var laTableView: UITableView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let url = "http://192.168.1.14:3000/api/posts"
+        loadFromWS(url: url)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         laTableView.delegate = self
         laTableView.dataSource = self
-
-        // Do any additional setup after loading the view.
-        //let p = Post(username: "Haffez med", description: "String", date: "23h", imgProfile: "String", imgPost: "String")
-        posts.append(Post(username: "String", description: "String", date: "String", imgProfile: "String", imgPost: "String"))
-         posts.append(Post(username: "String", description: "String", date: "String", imgProfile: "String", imgPost: "String"))
-         posts.append(Post(username: "String", description: "String", date: "String", imgProfile: "String", imgPost: "String"))
-        print("Count Items Posts",posts.count )
-
+    }
     
+    func loadFromWS(url:String){
+    do{
+        let appUrl = URL(string :url)!
+        let data = try Data(contentsOf: appUrl)
+        let json:JSON = try JSON(data: data)
+        jsonRep = json;
+        for (index,subJson):(String, JSON) in jsonRep {
+            // Do something you want
+          print(subJson["user"]["firstname"])
+            
+            posts.append(Post(username: subJson["user"]["firstname"].string!+" "+subJson["user"]["lastname"].string!, description: subJson["postText"].string!, date: "2 h", imgProfile:  subJson["user"]["url"].string!, imgPost:  subJson["postImage"].string!))
+        }
+    }
+    catch{
+    print("cannot read data server")
+    }
     }
     
 
