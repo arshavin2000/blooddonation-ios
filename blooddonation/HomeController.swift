@@ -22,7 +22,8 @@ class HomeController: UIViewController,UITableViewDelegate,UITableViewDataSource
         cell.laDate.text = posts[indexPath.row].date
         cell.laUsername.text = posts[indexPath.row].username
 
-        let urlImgPost = URL(string: posts[indexPath.row].imgPost)
+        let urlImgPost = URL(string: "http://172.20.10.2:3000/static/images/"+posts[indexPath.row].imgPost)
+        print(urlImgPost)
         let urlImgProfile = URL(string: posts[indexPath.row].imgProfile)
 
         let dataImgPost = try? Data(contentsOf: urlImgPost!)
@@ -31,24 +32,35 @@ class HomeController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         if dataImgPost != nil {
             cell.laPostImg.image = UIImage(data: dataImgPost!)
-
         }
         else {
             cell.laPostImg.image = UIImage(named: "image-not-available")
-
         }
         
         cell.laProfilImg.image = UIImage(data: dataImgProfile!)
+        
+        cell.laDescription.text = posts[indexPath.row].description
         
         return cell
     }
     
     
 
+    @IBAction func onAddPost(_ sender: Any) {
+    performSegue(withIdentifier: "showAddPost", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC : AddPostController = segue.destination as! AddPostController
+        
+        destVC.username = posts[0].username!
+        destVC.imageProfile = posts[0].imgProfile
+    }
+    
     @IBOutlet weak var laTableView: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
-        let url = "http://192.168.1.14:3000/api/posts"
+        let url = "http://172.20.10.2:3000/api/posts"
         loadFromWS(url: url)
     }
     override func viewDidLoad() {

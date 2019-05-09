@@ -14,11 +14,13 @@ class UIPostCell: UITableViewCell {
     
     @IBOutlet weak var laDate: UILabel!
     @IBOutlet weak var laPostImg: UIImageView!
+    @IBOutlet weak var laDescription: UITextView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
