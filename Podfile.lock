@@ -27,6 +27,20 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.44.1):
     - FBSDKCoreKit
+  - SwiftyJSON (5.0.0)
+  - GoogleSignIn (4.4.0):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.0)":
+    - GoogleToolboxForMac/DebugUtils (= 2.2.0)
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
+  - GTMSessionFetcher/Core (1.2.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -34,6 +48,7 @@ DEPENDENCIES:
   - FacebookCore
   - FacebookLogin
   - FacebookShare
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -46,6 +61,7 @@ SPEC REPOS:
     - FBSDKCoreKit
     - FBSDKLoginKit
     - FBSDKShareKit
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -57,7 +73,11 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: a823ae35bdb60ebb8d7a7e51abe7c5d87d2bfced
   FBSDKLoginKit: 54ae59987f2a8703021557c90a9aebb9e5c2bef6
   FBSDKShareKit: 526d4cfb713d24855fa23d0dd74e191accd3a720
+  GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: aad0be839c0b26c2781b0f11da29c234e25ecc68
+PODFILE CHECKSUM: 12ae9115611ecc72a86e815d917d98bc2de20199
 
 COCOAPODS: 1.6.1
