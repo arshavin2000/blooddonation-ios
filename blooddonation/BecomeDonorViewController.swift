@@ -63,7 +63,7 @@ class BecomeDonorViewController: UIViewController {
         user?.number = number_text.text!
 
         DonorService.addDonor(user : user!)
-        
+
     }
     
     @IBAction func genderAction(_ sender: Any) {

@@ -40,6 +40,8 @@ PODS:
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
   - GTMSessionFetcher/Core (1.2.1)
+  - Mapbox-iOS-SDK (4.10.0)
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -48,6 +50,8 @@ DEPENDENCIES:
   - FacebookLogin
   - FacebookShare
   - GoogleSignIn
+  - Mapbox-iOS-SDK (~> 4.10)
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -63,6 +67,8 @@ SPEC REPOS:
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMSessionFetcher
+    - Mapbox-iOS-SDK
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -77,7 +83,9 @@ SPEC CHECKSUMS:
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  Mapbox-iOS-SDK: 8b1b777de7de373cdf000994c91af101ef886477
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 12ae9115611ecc72a86e815d917d98bc2de20199
+PODFILE CHECKSUM: f98f0a8e4baabd97fe90699febdd5859899607f0
 
 COCOAPODS: 1.6.1

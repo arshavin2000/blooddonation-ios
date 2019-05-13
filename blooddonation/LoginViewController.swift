@@ -41,7 +41,7 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        
+    
         
         // test if user is onncected with facebook or not
         
@@ -124,7 +124,8 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
 
                                 }
                                 else{
-                                    
+                                    self.performSegue(withIdentifier: "home", sender: nil)
+
                                 }
                             })
                     }
@@ -164,6 +165,8 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
                                     self.firstname = value.dictionaryValue!["first_name"] as! String
                                     self.lastname = value.dictionaryValue!["last_name"] as! String
                                     self.picture  = "http://graph.facebook.com/\(value.dictionaryValue!["id"] as! String)/picture?type=large"
+                                    self.userId = value.dictionaryValue!["id"] as! String
+
                                     
                                     
                                 }
@@ -183,7 +186,8 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
                                             
                                         }
                                         else{
-                                            
+                                            self.performSegue(withIdentifier: "home", sender: nil)
+
                                         }
                                     })
                                     
@@ -224,7 +228,8 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
                     
                 }
                 else{
-                    
+                    self.performSegue(withIdentifier: "home", sender: nil)
+
                 }
             })
             
@@ -234,13 +239,18 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let becomeDonor : BecomeDonorViewController = segue.destination as! BecomeDonorViewController
+        
+        if (segue.identifier == "login")
+            {
+                let becomeDonor : BecomeDonorViewController = (segue.destination as? BecomeDonorViewController)!
         
         becomeDonor.email = self.email
         becomeDonor.firstname = self.firstname
         becomeDonor.lastname = self.lastname
         becomeDonor.picture = self.picture
         becomeDonor.userId = self.userId
+        }
+        
         
     }
     

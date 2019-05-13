@@ -11,5 +11,6 @@ import UIKit
 class Utility
 {
     static let  basicUrl = "http://192.168.1.15:3000/api/donor"
-
+    static let centerUrl = "http://192.168.1.15:3000/api/centers"
+    static let requestUrl = "http://192.168.1.15:3000/api/request"
 }

@@ -13,7 +13,9 @@ target 'blooddonation' do
   pod 'FacebookShare'
   pod 'Alamofire'
   pod 'AlamofireImage'
+  pod 'SwiftyJSON'
   pod 'GoogleSignIn'
+  pod 'Mapbox-iOS-SDK', '~> 4.10'
 
   target 'blooddonationTests' do
     inherit! :search_paths
