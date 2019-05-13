@@ -101,7 +101,6 @@ UINavigationControllerDelegate {
             } //Optional for extra parameters
         },
             to:  "http://192.168.1.14:11808/api/uploadfile/",
-            to:  "http://172.20.10.2:3000/api/uploadfile/",
             headers: headers,
             encodingCompletion: { encodingResult in
                 switch encodingResult {
