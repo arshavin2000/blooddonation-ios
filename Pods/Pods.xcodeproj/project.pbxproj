@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -653,12 +653,12 @@
 			remoteGlobalIDString = 884BAE1384CFCD139B60928E711B40F6;
 			remoteInfo = FacebookShare;
 		};
-		4004F8F280FD3DCB25E6111CD531FE65 /* PBXContainerItemProxy */ = {
+		6066B76478CBDC08097D015690734630 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 64979BF0417879D8090077A97C73F676;
-			remoteInfo = FBSDKCoreKit;
+			remoteGlobalIDString = DC3E9E4A8C5CAC4A32BD9A4E8B8202B4;
+			remoteInfo = FacebookLogin;
 		};
 		45AFA32A97AD5421D53778D8045198A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -723,6 +723,20 @@
 			remoteGlobalIDString = 64979BF0417879D8090077A97C73F676;
 			remoteInfo = FBSDKCoreKit;
 		};
+		87D9D25C0B249CC5175F047FD2E8E28C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 884BAE1384CFCD139B60928E711B40F6;
+			remoteInfo = FacebookShare;
+		};
+		8E8CB7BA907DABBC5F40BC5D99A87F35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64979BF0417879D8090077A97C73F676;
+			remoteInfo = FBSDKCoreKit;
+		};
 		953990D1B50CA181DC15281763013075 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -737,12 +751,12 @@
 			remoteGlobalIDString = 9920FE112903F1A8C550230650AD3254;
 			remoteInfo = Bolts;
 		};
-		9E680B508E408D7B3C0873325A8CC953 /* PBXContainerItemProxy */ = {
+		9A3A621396F2A176E5876A8A878700B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9920FE112903F1A8C550230650AD3254;
-			remoteInfo = Bolts;
+			remoteGlobalIDString = AF0370AAF034BBD44060B90AAA8FD1CE;
+			remoteInfo = AlamofireImage;
 		};
 		A39860F8EFD4538E4290A8E9DA7C63B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1539,6 +1553,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2AF80AC42B4CE9E348071E98547D858 /* Foundation.framework in Frameworks */,
+		4B028E70E58B434CDE0EB35A5C9C46A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF447E02785021514B02E2250E639EBE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EDDD270B664899E3FD59F3310D66690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57AF8CF9BABE2445DB2AD103902AF05 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2339,7 +2366,8 @@
 				4EAECE5B634115B087CD069667F3AD48 /* FBSDKShareKit.framework */,
 				E2001436C0B609D2CA8560FC644E0E31 /* iOS */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/FBSDKShareKit";
 			sourceTree = "<group>";
 		};
 		B20B5953C01A643ACB2B6BD1B907CD6F /* Resources */ = {
@@ -2878,7 +2906,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E573169175B9EEEF888ADC80C1066BD /* FacebookCore-umbrella.h in Headers */,
+				DF11EDC40B767FD6503176842BAF6A38 /* Pods-blooddonation-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3177,6 +3205,34 @@
 			productReference = 614A396A3E64C5A59D4EADE95B4E5AC4 /* Pods_blooddonationUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		9B599D10358EEF91B4CD0C418484D67E /* Pods-blooddonation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76F719A4FBC54CA3C4CC9D63AC68FD4 /* Build configuration list for PBXNativeTarget "Pods-blooddonation" */;
+			buildPhases = (
+				901C2782528A56941C83E31F2E89C7E3 /* Headers */,
+				22720730B779C4815577A35CF0E39EE2 /* Sources */,
+				6EDDD270B664899E3FD59F3310D66690 /* Frameworks */,
+				730CB4A4FF33DE16300B5BA7F4D1DCD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAB1D9F91734D7A574847FF3807741A8 /* PBXTargetDependency */,
+				B373C5CEFF0B82F4169B3D04CF5EA94A /* PBXTargetDependency */,
+				454DE25B35C33DB6CB8F0DAE15699469 /* PBXTargetDependency */,
+				06EB13F164255D77576D9887638B265F /* PBXTargetDependency */,
+				C90755602EAE49D4A6E3764AD3789EAB /* PBXTargetDependency */,
+				ECE2DB863877EECAA8E83BD24A416327 /* PBXTargetDependency */,
+				1D52DB9F788435BA9C702AC1897E5C90 /* PBXTargetDependency */,
+				DE84540AC042A4F401F08AECCC390013 /* PBXTargetDependency */,
+				02519EA46FB15CD61D4647B63CA6DC43 /* PBXTargetDependency */,
+				3BBF9AA111C7399A0B22241A17D27894 /* PBXTargetDependency */,
+			);
+			name = "Pods-blooddonation";
+			productName = "Pods-blooddonation";
+			productReference = 22F02C3C75DD383539C62BB408D9A12E /* Pods_blooddonation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		AF0370AAF034BBD44060B90AAA8FD1CE /* AlamofireImage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F58DCC83C0D45673B602C886B82962EB /* Build configuration list for PBXNativeTarget "AlamofireImage" */;
@@ -3231,6 +3287,24 @@
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
 			productReference = 435DF046A5F12DDEEDE383B21D28BC10 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D353408544C3C71A8B9F724C69A6E0AA /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4931D6F74A45C8ECD196DF83503090D /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				A270D28C6A5D9F8177FE7CBF360D2446 /* Headers */,
+				E8F4E4418C985474A9502DA5F1AF31F3 /* Sources */,
+				4B028E70E58B434CDE0EB35A5C9C46A2 /* Frameworks */,
+				3DD988237D5DBDFA08EC210F5F10FBEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 9E9FDA8E661A7D7AC7D5E62047C64D21 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DC3E9E4A8C5CAC4A32BD9A4E8B8202B4 /* FacebookLogin */ = {
@@ -3331,7 +3405,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3425,7 +3499,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8CD1B4B93E366AC2EE39DE6602F571B7 /* Resources */ = {
+		730CB4A4FF33DE16300B5BA7F4D1DCD8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3501,6 +3575,14 @@
 				F853F6FCDDFB099744F56099ACA123DC /* UIButton+AlamofireImage.swift in Sources */,
 				3AC31661CECD14792855AFC94025667B /* UIImage+AlamofireImage.swift in Sources */,
 				FFF18720349BC8631EF1A8881BB5CA40 /* UIImageView+AlamofireImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22720730B779C4815577A35CF0E39EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4885B9F3E94563C1E099C6B493502A82 /* Pods-blooddonation-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3870,11 +3952,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA36975D79DA2927BEEF0923509FCFC9 /* Sources */ = {
+		E8F4E4418C985474A9502DA5F1AF31F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D1B3C0497E8F7031DDF7B24696C315D /* Pods-blooddonationUITests-dummy.m in Sources */,
+				5E06F822F9B225AFCAF0EAEAAEDAB334 /* SwiftyJSON-dummy.m in Sources */,
+				C31748C44F73E6A9767CD4A9B7FF8FBC /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4283,7 +4366,11 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -4314,7 +4401,11 @@
 				INFOPLIST_FILE = "Target Support Files/Bolts/Bolts-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/Bolts/Bolts.modulemap";
 				PRODUCT_MODULE_NAME = Bolts;
 				PRODUCT_NAME = Bolts;
@@ -4441,7 +4532,11 @@
 				INFOPLIST_FILE = "Target Support Files/FacebookShare/FacebookShare-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FacebookShare/FacebookShare.modulemap";
 				PRODUCT_MODULE_NAME = FacebookShare;
 				PRODUCT_NAME = FacebookShare;
@@ -4472,7 +4567,11 @@
 				INFOPLIST_FILE = "Target Support Files/FacebookCore/FacebookCore-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FacebookCore/FacebookCore.modulemap";
 				PRODUCT_MODULE_NAME = FacebookCore;
 				PRODUCT_NAME = FacebookCore;
@@ -4503,7 +4602,11 @@
 				INFOPLIST_FILE = "Target Support Files/FBSDKShareKit/FBSDKShareKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FBSDKShareKit/FBSDKShareKit.modulemap";
 				PRODUCT_MODULE_NAME = FBSDKShareKit;
 				PRODUCT_NAME = FBSDKShareKit;
@@ -4569,7 +4672,11 @@
 				INFOPLIST_FILE = "Target Support Files/AlamofireImage/AlamofireImage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/AlamofireImage/AlamofireImage.modulemap";
 				PRODUCT_MODULE_NAME = AlamofireImage;
 				PRODUCT_NAME = AlamofireImage;
@@ -4601,7 +4708,11 @@
 				INFOPLIST_FILE = "Target Support Files/FacebookLogin/FacebookLogin-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FacebookLogin/FacebookLogin.modulemap";
 				PRODUCT_MODULE_NAME = FacebookLogin;
 				PRODUCT_NAME = FacebookLogin;
@@ -4668,7 +4779,11 @@
 				INFOPLIST_FILE = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit.modulemap";
 				PRODUCT_MODULE_NAME = FBSDKLoginKit;
 				PRODUCT_NAME = FBSDKLoginKit;
@@ -4699,7 +4814,11 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -4763,7 +4882,11 @@
 				INFOPLIST_FILE = "Target Support Files/FacebookShare/FacebookShare-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FacebookShare/FacebookShare.modulemap";
 				PRODUCT_MODULE_NAME = FacebookShare;
 				PRODUCT_NAME = FacebookShare;
@@ -4855,7 +4978,11 @@
 				INFOPLIST_FILE = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit.modulemap";
 				PRODUCT_MODULE_NAME = FBSDKLoginKit;
 				PRODUCT_NAME = FBSDKLoginKit;
@@ -4983,7 +5110,11 @@
 				INFOPLIST_FILE = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit.modulemap";
 				PRODUCT_MODULE_NAME = FBSDKCoreKit;
 				PRODUCT_NAME = FBSDKCoreKit;
@@ -5028,7 +5159,11 @@
 				INFOPLIST_FILE = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit.modulemap";
 				PRODUCT_MODULE_NAME = FBSDKCoreKit;
 				PRODUCT_NAME = FBSDKCoreKit;
@@ -5094,7 +5229,11 @@
 				INFOPLIST_FILE = "Target Support Files/Bolts/Bolts-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/Bolts/Bolts.modulemap";
 				PRODUCT_MODULE_NAME = Bolts;
 				PRODUCT_NAME = Bolts;
@@ -5140,7 +5279,11 @@
 				INFOPLIST_FILE = "Target Support Files/FBSDKShareKit/FBSDKShareKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FBSDKShareKit/FBSDKShareKit.modulemap";
 				PRODUCT_MODULE_NAME = FBSDKShareKit;
 				PRODUCT_NAME = FBSDKShareKit;
@@ -5203,7 +5346,11 @@
 				INFOPLIST_FILE = "Target Support Files/FacebookCore/FacebookCore-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FacebookCore/FacebookCore.modulemap";
 				PRODUCT_MODULE_NAME = FacebookCore;
 				PRODUCT_NAME = FacebookCore;
@@ -5343,6 +5490,24 @@
 			buildConfigurations = (
 				449A7ED1C9649DE6A1DCB8F818BF5581 /* Debug */,
 				1175409F511FB730E943F4EA08785BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4931D6F74A45C8ECD196DF83503090D /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4111130CAA44F3B0FB60F33F67C1E198 /* Debug */,
+				37C8D936AF5BCB081443F0D0B12C2201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D76F719A4FBC54CA3C4CC9D63AC68FD4 /* Build configuration list for PBXNativeTarget "Pods-blooddonation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC464FA447F33D5DBD2195C0E752207F /* Debug */,
+				CD7344DCFC4BE89A9D3883E73450E84D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

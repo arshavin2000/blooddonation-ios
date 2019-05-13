@@ -27,6 +27,7 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.44.1):
     - FBSDKCoreKit
+  - SwiftyJSON (5.0.0)
   - GoogleSignIn (4.4.0):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
