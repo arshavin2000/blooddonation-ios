@@ -355,14 +355,12 @@
                                 <color key="tintColor" red="1" green="0.12941176469999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="bloodAction:" destination="EbT-sc-Y0C" eventType="valueChanged" id="b3E-ME-Qca"/>
-                                    <action selector="blood_groupAction:" destination="YXb-6E-9fr" eventType="valueChanged" id="OHX-wl-Cwc"/>
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTN-px-Kqp">
                                 <rect key="frame" x="54" y="637" width="317" height="50"/>
                                 <state key="normal" title="Submit" backgroundImage="button_bg"/>
                                 <connections>
-                                    <action selector="done_action:" destination="YXb-6E-9fr" eventType="touchUpInside" id="Qbl-LN-SFV"/>
                                     <action selector="submitAction:" destination="EbT-sc-Y0C" eventType="touchUpInside" id="0tg-b8-ueZ"/>
                                 </connections>
                             </button>
