@@ -268,28 +268,47 @@
                                     <navigationItem title="Title" id="NP7-jJ-Awy"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chat Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPn-kW-czY">
-                                <rect key="frame" x="160" y="438" width="95" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WJ7-Wp-pWU">
+                                <rect key="frame" x="0.0" y="783" width="368" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="368" id="My1-Qh-a6p"/>
+                                </constraints>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKY-Yv-q9D">
+                                <rect key="frame" x="368" y="780" width="46" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendMsgAction:" destination="jdy-qt-F22" eventType="touchUpInside" id="Dnh-GS-HCV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="TzW-oP-tgr" firstAttribute="trailing" secondItem="JKY-Yv-q9D" secondAttribute="trailing" id="JoG-Mm-A2S"/>
+                            <constraint firstItem="WJ7-Wp-pWU" firstAttribute="leading" secondItem="TzW-oP-tgr" secondAttribute="leading" id="TZC-Pk-ssw"/>
                             <constraint firstItem="Dsm-Sz-gjA" firstAttribute="trailing" secondItem="TzW-oP-tgr" secondAttribute="trailing" id="dLc-Yq-Sbz"/>
                             <constraint firstItem="Dsm-Sz-gjA" firstAttribute="leading" secondItem="TzW-oP-tgr" secondAttribute="leading" id="hp5-Bv-Eci"/>
+                            <constraint firstItem="JKY-Yv-q9D" firstAttribute="bottom" secondItem="TzW-oP-tgr" secondAttribute="bottom" id="qwG-mo-n7i"/>
                             <constraint firstItem="Dsm-Sz-gjA" firstAttribute="top" secondItem="TzW-oP-tgr" secondAttribute="top" id="rux-JI-esJ"/>
+                            <constraint firstItem="JKY-Yv-q9D" firstAttribute="leading" secondItem="WJ7-Wp-pWU" secondAttribute="trailing" id="uDH-Xw-4K2"/>
+                            <constraint firstItem="WJ7-Wp-pWU" firstAttribute="bottom" secondItem="TzW-oP-tgr" secondAttribute="bottom" id="ubS-pT-K0X"/>
+                            <constraint firstItem="JKY-Yv-q9D" firstAttribute="leading" secondItem="WJ7-Wp-pWU" secondAttribute="trailing" id="yaG-lU-lkx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TzW-oP-tgr"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Chat" id="Vyv-Ur-6KJ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="inMsgField" destination="WJ7-Wp-pWU" id="cjR-bt-DwB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QzF-eU-Q6t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-705" y="1721"/>
+            <point key="canvasLocation" x="-705.79710144927537" y="1720.9821428571429"/>
         </scene>
         <!--Item-->
         <scene sceneID="Oka-G1-glc">
