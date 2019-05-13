@@ -26,6 +26,8 @@
 		A9CA750A2273031000524493 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA75092273031000524493 /* MapViewController.swift */; };
 		A9CA750C2273143F00524493 /* CenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA750B2273143F00524493 /* CenterService.swift */; };
 		B6C665394712DC6457B8D919 /* Pods_blooddonationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2D462421FAF9CE0F74CF24 /* Pods_blooddonationTests.framework */; };
+		CE16A0A72289AE98006EFF5E /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16A0A62289AE98006EFF5E /* ChatController.swift */; };
+		CE16A0AA2289B47F006EFF5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE16A0A92289B47F006EFF5E /* GoogleService-Info.plist */; };
 		CE44CA3822722CB100FA6DDB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44CA3722722CB100FA6DDB /* Post.swift */; };
 		CE44CA3B22722E6800FA6DDB /* UIPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44CA3A22722E6800FA6DDB /* UIPostCell.swift */; };
 		CE44CA3D2272498500FA6DDB /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44CA3C2272498500FA6DDB /* HomeController.swift */; };
@@ -79,6 +81,9 @@
 		A9CA75092273031000524493 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A9CA750B2273143F00524493 /* CenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterService.swift; sourceTree = "<group>"; };
 		BCDB69DB237B8B21D05A572C /* Pods-blooddonationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blooddonationUITests.release.xcconfig"; path = "Target Support Files/Pods-blooddonationUITests/Pods-blooddonationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE16A0A62289AE98006EFF5E /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		CE16A0A82289B182006EFF5E /* blooddonation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = blooddonation.entitlements; sourceTree = "<group>"; };
+		CE16A0A92289B47F006EFF5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE44CA3722722CB100FA6DDB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CE44CA3A22722E6800FA6DDB /* UIPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPostCell.swift; sourceTree = "<group>"; };
 		CE44CA3C2272498500FA6DDB /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -165,23 +170,26 @@
 		A97CEDA122666E0F008C674F /* blooddonation */ = {
 			isa = PBXGroup;
 			children = (
+				CE16A0A82289B182006EFF5E /* blooddonation.entitlements */,
 				A9CA750622727E1F00524493 /* utility */,
 				A9CA750322727DA000524493 /* service */,
 				A9CA74FB2272147C00524493 /* model */,
+				A97CEDAB22666E12008C674F /* LaunchScreen.storyboard */,
+				A97CEDA622666E0F008C674F /* Main.storyboard */,
 				A97CEDA222666E0F008C674F /* AppDelegate.swift */,
+				A9CA74F72271FF2400524493 /* LoginViewController.swift */,
 				CE44CA3A22722E6800FA6DDB /* UIPostCell.swift */,
+				CE44CA3E2272AC2E00FA6DDB /* AddPostController.swift */,
 				A97CEDA422666E0F008C674F /* ViewController.swift */,
 				CE44CA3C2272498500FA6DDB /* HomeController.swift */,
-				A97CEDA622666E0F008C674F /* Main.storyboard */,
-				A97CEDA922666E12008C674F /* Assets.xcassets */,
-				A97CEDAB22666E12008C674F /* LaunchScreen.storyboard */,
-				A97CEDAE22666E12008C674F /* Info.plist */,
-				A9CA74F72271FF2400524493 /* LoginViewController.swift */,
-				CE44CA3E2272AC2E00FA6DDB /* AddPostController.swift */,
 				A9CA74FE22721E4D00524493 /* BecomeDonorViewController.swift */,
-				A9CA750022721EDD00524493 /* blooddonation.xcdatamodeld */,
 				A9CA75092273031000524493 /* MapViewController.swift */,
 				A9B3732A22851A7B00D055DD /* RequestBloodController.swift */,
+				CE16A0A62289AE98006EFF5E /* ChatController.swift */,
+				A97CEDA922666E12008C674F /* Assets.xcassets */,
+				A97CEDAE22666E12008C674F /* Info.plist */,
+				A9CA750022721EDD00524493 /* blooddonation.xcdatamodeld */,
+				CE16A0A92289B47F006EFF5E /* GoogleService-Info.plist */,
 			);
 			path = blooddonation;
 			sourceTree = "<group>";
@@ -304,6 +312,11 @@
 				TargetAttributes = {
 					A97CED9E22666E0F008C674F = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					A97CEDB222666E12008C674F = {
 						CreatedOnToolsVersion = 10.2;
@@ -341,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A97CEDAD22666E12008C674F /* LaunchScreen.storyboard in Resources */,
+				CE16A0AA2289B47F006EFF5E /* GoogleService-Info.plist in Resources */,
 				A97CEDAA22666E12008C674F /* Assets.xcassets in Resources */,
 				A97CEDA822666E0F008C674F /* Main.storyboard in Resources */,
 			);
@@ -383,10 +397,14 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -403,10 +421,14 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputBarAccessoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -521,6 +543,7 @@
 				A9CA750222721EDD00524493 /* blooddonation.xcdatamodeld in Sources */,
 				A9CA750522727DC700524493 /* DonorService.swift in Sources */,
 				CE44CA3F2272AC2E00FA6DDB /* AddPostController.swift in Sources */,
+				CE16A0A72289AE98006EFF5E /* ChatController.swift in Sources */,
 				A97CEDA322666E0F008C674F /* AppDelegate.swift in Sources */,
 				A9B373292285177900D055DD /* RequestService.swift in Sources */,
 				CE44CA3F2272AC2E00FA6DDB /* AddPostController.swift in Sources */,
@@ -701,6 +724,7 @@
 			baseConfigurationReference = 57C87A0745A36373EEDA9546 /* Pods-blooddonation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = blooddonation/blooddonation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4S5YR7Z9Z;
 				INFOPLIST_FILE = blooddonation/Info.plist;
@@ -709,7 +733,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.app.blooddonation;
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.app.blooddonation1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -721,6 +745,7 @@
 			baseConfigurationReference = D38D27A2540CA2D942CBBE58 /* Pods-blooddonation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = blooddonation/blooddonation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4S5YR7Z9Z;
 				INFOPLIST_FILE = blooddonation/Info.plist;
@@ -729,7 +754,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.app.blooddonation;
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.app.blooddonation1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

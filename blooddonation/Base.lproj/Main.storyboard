@@ -34,14 +34,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hx-1f-dq9">
-                                <rect key="frame" x="88.5" y="426" width="237" height="44"/>
+                                <rect key="frame" x="199" y="437" width="16" height="22"/>
                                 <state key="normal" image="facebook"/>
                                 <connections>
                                     <action selector="facebook_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hx6-UJ-tx2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffy-pG-jZ1">
-                                <rect key="frame" x="88.5" y="496" width="237.00000000000006" height="44"/>
+                                <rect key="frame" x="199" y="510" width="16" height="16"/>
                                 <state key="normal" backgroundImage="google">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -50,13 +50,13 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rec2" translatesAutoresizingMaskIntoConstraints="NO" id="hAE-g3-aXg">
-                                <rect key="frame" x="0.0" y="692" width="414" height="203"/>
+                                <rect key="frame" x="0.0" y="879" width="414" height="16"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rec1" translatesAutoresizingMaskIntoConstraints="NO" id="E3m-Ai-Oa7">
-                                <rect key="frame" x="0.0" y="674" width="414" height="221.5"/>
+                                <rect key="frame" x="0.0" y="683" width="414" height="16"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rec3" translatesAutoresizingMaskIntoConstraints="NO" id="xhV-as-Qqw">
-                                <rect key="frame" x="0.0" y="683" width="414" height="212.5"/>
+                                <rect key="frame" x="0.0" y="683" width="414" height="16"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -172,7 +172,7 @@
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCa-zH-26J">
-                                <rect key="frame" x="48.5" y="762" width="317" height="50"/>
+                                <rect key="frame" x="185.5" y="762" width="43" height="22"/>
                                 <state key="normal" title="Done" backgroundImage="button_bg"/>
                                 <connections>
                                     <action selector="done_action:" destination="YXb-6E-9fr" eventType="touchUpInside" id="NCY-Ba-1nQ"/>
@@ -254,7 +254,44 @@
             </objects>
             <point key="canvasLocation" x="1688" y="1703"/>
         </scene>
-        <!--Item 2-->
+        <!--Chat-->
+        <scene sceneID="Ttc-1w-YDc">
+            <objects>
+                <viewController id="jdy-qt-F22" customClass="ChatController" customModule="blooddonation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kZT-eh-dz6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dsm-Sz-gjA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="NP7-jJ-Awy"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chat Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPn-kW-czY">
+                                <rect key="frame" x="160" y="438" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dsm-Sz-gjA" firstAttribute="trailing" secondItem="TzW-oP-tgr" secondAttribute="trailing" id="dLc-Yq-Sbz"/>
+                            <constraint firstItem="Dsm-Sz-gjA" firstAttribute="leading" secondItem="TzW-oP-tgr" secondAttribute="leading" id="hp5-Bv-Eci"/>
+                            <constraint firstItem="Dsm-Sz-gjA" firstAttribute="top" secondItem="TzW-oP-tgr" secondAttribute="top" id="rux-JI-esJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TzW-oP-tgr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat" id="Vyv-Ur-6KJ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QzF-eU-Q6t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-705" y="1721"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="Oka-G1-glc">
             <objects>
                 <viewController id="wTi-M0-4p4" sceneMemberID="viewController">
@@ -264,7 +301,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9tp-eA-V0I"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="atP-wR-M4h"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="a2X-AG-4AM"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ce-Uc-lIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -377,6 +415,8 @@
                         <segue destination="tdJ-cB-t1V" kind="relationship" relationship="viewControllers" id="YqF-S8-U1h"/>
                         <segue destination="bI0-zc-QaF" kind="relationship" relationship="viewControllers" id="YXW-DS-Iup"/>
                         <segue destination="EbT-sc-Y0C" kind="relationship" relationship="viewControllers" id="DTh-2o-SvM"/>
+                        <segue destination="wTi-M0-4p4" kind="relationship" relationship="viewControllers" id="RcA-kJ-Ugk"/>
+                        <segue destination="jdy-qt-F22" kind="relationship" relationship="viewControllers" id="lHQ-l8-7GC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1e-1U-QXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>

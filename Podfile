@@ -16,6 +16,10 @@ target 'blooddonation' do
   pod 'SwiftyJSON'
   pod 'GoogleSignIn'
   pod 'Mapbox-iOS-SDK', '~> 4.10'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'MessageKit'
 
   target 'blooddonationTests' do
     inherit! :search_paths
