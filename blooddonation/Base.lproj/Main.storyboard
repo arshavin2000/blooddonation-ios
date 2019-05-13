@@ -34,14 +34,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hx-1f-dq9">
-                                <rect key="frame" x="88.5" y="426" width="237" height="44"/>
+                                <rect key="frame" x="199" y="437" width="16" height="22"/>
                                 <state key="normal" image="facebook"/>
                                 <connections>
                                     <action selector="facebook_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hx6-UJ-tx2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffy-pG-jZ1">
-                                <rect key="frame" x="88.5" y="496" width="237.00000000000006" height="44"/>
+                                <rect key="frame" x="199" y="510" width="16" height="16"/>
                                 <state key="normal" backgroundImage="google">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -50,13 +50,13 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rec2" translatesAutoresizingMaskIntoConstraints="NO" id="hAE-g3-aXg">
-                                <rect key="frame" x="0.0" y="692" width="414" height="203"/>
+                                <rect key="frame" x="0.0" y="879" width="414" height="16"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rec1" translatesAutoresizingMaskIntoConstraints="NO" id="E3m-Ai-Oa7">
-                                <rect key="frame" x="0.0" y="674" width="414" height="221.5"/>
+                                <rect key="frame" x="0.0" y="683" width="414" height="16"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rec3" translatesAutoresizingMaskIntoConstraints="NO" id="xhV-as-Qqw">
-                                <rect key="frame" x="0.0" y="683" width="414" height="212.5"/>
+                                <rect key="frame" x="0.0" y="683" width="414" height="16"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -172,7 +172,7 @@
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCa-zH-26J">
-                                <rect key="frame" x="48.5" y="762" width="317" height="50"/>
+                                <rect key="frame" x="185.5" y="762" width="43" height="22"/>
                                 <state key="normal" title="Done" backgroundImage="button_bg"/>
                                 <connections>
                                     <action selector="done_action:" destination="YXb-6E-9fr" eventType="touchUpInside" id="NCY-Ba-1nQ"/>
@@ -317,14 +317,12 @@
                                 <color key="tintColor" red="1" green="0.12941176469999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="bloodAction:" destination="EbT-sc-Y0C" eventType="valueChanged" id="b3E-ME-Qca"/>
-                                    <action selector="blood_groupAction:" destination="YXb-6E-9fr" eventType="valueChanged" id="OHX-wl-Cwc"/>
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTN-px-Kqp">
                                 <rect key="frame" x="54" y="637" width="317" height="50"/>
                                 <state key="normal" title="Submit" backgroundImage="button_bg"/>
                                 <connections>
-                                    <action selector="done_action:" destination="YXb-6E-9fr" eventType="touchUpInside" id="Qbl-LN-SFV"/>
                                     <action selector="submitAction:" destination="EbT-sc-Y0C" eventType="touchUpInside" id="0tg-b8-ueZ"/>
                                 </connections>
                             </button>

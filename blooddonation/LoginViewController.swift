@@ -124,6 +124,13 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
 
                                 }
                                 else{
+                                    let user = User ()
+                                    user?.id = self.userId
+                                    user?.email = self.email
+                                    user?.firstname = self.firstname
+                                    user?.lastname = self.lastname
+                                    user?.urlImage = self.picture
+                                    DonorService.addDonorLocal(user : user!)
                                     self.performSegue(withIdentifier: "home", sender: nil)
 
                                 }
@@ -186,6 +193,13 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
                                             
                                         }
                                         else{
+                                            let user = User ()
+                                            user?.id = self.userId
+                                            user?.email = self.email
+                                            user?.firstname = self.firstname
+                                            user?.lastname = self.lastname
+                                            user?.urlImage = self.picture
+                                            DonorService.addDonorLocal(user : user!)
                                             self.performSegue(withIdentifier: "home", sender: nil)
 
                                         }
@@ -228,6 +242,13 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
                     
                 }
                 else{
+                    let user = User ()
+                    user?.id = self.userId
+                    user?.email = self.email
+                    user?.firstname = self.firstname
+                    user?.lastname = self.lastname
+                    user?.urlImage = self.picture
+                    DonorService.addDonorLocal(user : user!)
                     self.performSegue(withIdentifier: "home", sender: nil)
 
                 }

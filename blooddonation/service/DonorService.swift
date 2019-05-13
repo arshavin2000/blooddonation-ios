@@ -122,6 +122,53 @@ class DonorService
 
     
     }
+    
+    
+    static func retrieveUser(completion:@escaping (User) -> ()) -> Void {
+        
+        
+        let user = User ()
+
+        //As we know that container is set up in the AppDelegates so we need to refer that container.
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        //We need to create a context from this container
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        //Prepare the request of type NSFetchRequest  for the entity
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+        
+        //        fetchRequest.fetchLimit = 1
+        //        fetchRequest.predicate = NSPredicate(format: "username = %@", "Ankur")
+        //        fetchRequest.sortDescriptors = [NSSortDescriptor.init(key: "email", ascending: false)]
+        //
+
+        do {
+            let result = try managedContext.fetch(fetchRequest)
+
+            for data in result as! [NSManagedObject] {
+
+                print("user",data.value(forKey: "email") as! String)
+
+                user?.id = data.value(forKey: "id") as! String
+                user?.email = data.value(forKey: "email") as! String
+                user?.firstname = data.value(forKey: "firstname") as! String
+                user?.lastname = data.value(forKey: "lastname") as! String
+                user?.urlImage = data.value(forKey: "url") as! String
+                user?.bloodGroup = data.value(forKey: "blood_group") as! String
+                user?.gender = data.value(forKey: "gender") as! String
+                user?.number = data.value(forKey: "number") as! String
+                
+                completion(user!)
+
+               
+            }
+            
+        } catch {
+            
+            print("Failed")
+        }
+    }
 }
 
     

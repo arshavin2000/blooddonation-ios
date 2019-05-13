@@ -12,8 +12,10 @@ import Alamofire
 class RequestService
 {
     static func addRequest(user : User , bloodGroup : String , city : String) -> Void {
+        
+        print("request")
         let donor = ["id":user.id,"firstname":user.firstname,"lastname":user.lastname,"email":user.email,"number":user.number,"url":user.urlImage
-            ,"bloodgroup":user.bloodGroup,"gender":user.gender,"answer":"0","request":"0","rate":"0"]
+            ,"bloodgroup":bloodGroup,"gender":city ,"answer":"0","request":"0","rate":"0"]
         
         let parameters =  ["donor": donor , "bloodgroup" : bloodGroup , "place" : city ] as [String : Any]
         

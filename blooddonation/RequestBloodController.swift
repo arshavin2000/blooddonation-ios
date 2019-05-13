@@ -21,6 +21,8 @@ class RequestBloodController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("didload")
+        
 
         // Do any additional setup after loading the view.
     }
@@ -59,8 +61,11 @@ class RequestBloodController: UIViewController {
     }
     
     @IBAction func submitAction(_ sender: Any) {
-        
-       // RequestService.addRequest(user: T##User, bloodGroup: <#T##String#>, city: <#T##String#>)
+        DonorService.retrieveUser { (user) in
+            print("request", user)
+            RequestService.addRequest(user: user , bloodGroup: self.bloodGroup, city: self.city.text!)
+
+        }
     }
     /*
     // MARK: - Navigation
