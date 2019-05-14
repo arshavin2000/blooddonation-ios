@@ -60,7 +60,12 @@ class RequestBloodController: UIViewController {
         }
     }
     
+    @IBAction func backBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     @IBAction func submitAction(_ sender: Any) {
+        
+       
         DonorService.retrieveUser { (user) in
             print("request", user)
             RequestService.addRequest(user: user , bloodGroup: self.bloodGroup, city: self.city.text!)
