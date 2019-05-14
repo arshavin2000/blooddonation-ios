@@ -24,8 +24,8 @@ class ChatController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         
         
-        switch listOfChatInfo[indexPath.row].message{
-        case "0":
+        switch listOfChatInfo[indexPath.row].sender{
+        case currentUser?.id:
             let cellChat:MessageCell = tableView.dequeueReusableCell(withIdentifier: "cellChat", for: indexPath) as! MessageCell
             cellChat.setMessage(message: listOfChatInfo[indexPath.row])
             return cellChat
@@ -78,12 +78,12 @@ class ChatController: UIViewController,UITableViewDelegate,UITableViewDataSource
                     if let message = snapshot.value as? [String:AnyObject]{
                         let sender = message["sender"] as? String
                         let text = message["text"] as? String
-                        let reciver = message["reciver"] as? String
+                        let reciever = message["reciver"] as? String
                         var postDate:CLong?
                         if let postDateIn = message["postDate"] as? CLong{
                             postDate = postDateIn
                         }
-                        self.listOfChatInfo.append(Message(message: text!))
+                        self.listOfChatInfo.append(Message(message: text!, sender: sender!, reciever: reciever!, postDate: postDate!))
 
                         
                     }
