@@ -8,9 +8,9 @@ target 'blooddonation' do
   # Pods for blooddonation
 
 
-  pod 'FacebookCore'
-  pod 'FacebookLogin'
-  pod 'FacebookShare'
+  pod 'FacebookCore' ,'0.6'
+  pod 'FacebookLogin' ,'0.6.0'
+  pod 'FacebookShare' ,'0.6.1'
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'SwiftyJSON'
@@ -19,7 +19,6 @@ target 'blooddonation' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
-  pod 'MessageKit'
 
   target 'blooddonationTests' do
     inherit! :search_paths

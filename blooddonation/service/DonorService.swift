@@ -155,6 +155,7 @@ class DonorService
                 user?.firstname = data.value(forKey: "firstname") as! String
                 user?.lastname = data.value(forKey: "lastname") as! String
                 user?.urlImage = data.value(forKey: "url") as! String
+                print("achref", data.value(forKey: "url") as! String)
                 user?.bloodGroup = data.value(forKey: "blood_group") as! String
                 user?.gender = data.value(forKey: "gender") as! String
                 user?.number = data.value(forKey: "number") as! String

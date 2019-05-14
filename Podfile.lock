@@ -102,11 +102,8 @@ PODS:
   - GoogleUtilities/UserDefaults (6.0.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.1)
-  - InputBarAccessoryView (4.2.2)
   - leveldb-library (1.20)
   - Mapbox-iOS-SDK (4.10.0)
-  - MessageKit (3.0.0):
-    - InputBarAccessoryView (~> 4.2.2)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -117,15 +114,14 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
-  - FacebookCore
-  - FacebookLogin
-  - FacebookShare
+  - FacebookCore (= 0.6)
+  - FacebookLogin (= 0.6.0)
+  - FacebookShare (= 0.6.1)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - GoogleSignIn
   - Mapbox-iOS-SDK (~> 4.10)
-  - MessageKit
   - SwiftyJSON
 
 SPEC REPOS:
@@ -151,10 +147,8 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GoogleUtilities
     - GTMSessionFetcher
-    - InputBarAccessoryView
     - leveldb-library
     - Mapbox-iOS-SDK
-    - MessageKit
     - nanopb
     - SwiftyJSON
 
@@ -180,13 +174,11 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GoogleUtilities: f1faafc033ea203adf1783ce00af455bb99d0e5b
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
-  InputBarAccessoryView: 2b937602598e2fab3149f37f51dd7ad795653812
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   Mapbox-iOS-SDK: 8b1b777de7de373cdf000994c91af101ef886477
-  MessageKit: e892a9ca49ebe6d82684d3a93ad84021fa23e2c6
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 3bcf771d8e57ee4f240e85213263e595eca7ab9f
+PODFILE CHECKSUM: b754760a01989f625d2c284cafd3c85db68440ce
 
 COCOAPODS: 1.6.1
