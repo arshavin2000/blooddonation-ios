@@ -75,6 +75,7 @@ class DonorService
         u.setValue(user.number, forKeyPath: "number")
         u.setValue(user.gender, forKeyPath: "gender")
         u.setValue(user.bloodGroup, forKeyPath: "blood_group")
+        print("imaage", user.urlImage)
         u.setValue(user.urlImage, forKeyPath: "url")
      
         

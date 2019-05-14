@@ -9,7 +9,9 @@
 import UIKit
 import Alamofire
 
-class RequstsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+
+class RequstsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     @IBOutlet weak var nb_requests: UILabel!
     @IBOutlet weak var tableview: UITableView!
@@ -36,14 +38,24 @@ class RequstsViewController: UIViewController, UITableViewDelegate, UITableViewD
         let bloodGroup = contentview?.viewWithTag(5) as! UIButton
 
         let image = contentview?.viewWithTag(1) as! UIImageView
-        
+        image.frame.size.width = 150
+        image.frame.size.height = 150
+
         let request = requests[indexPath.row]
         name.text = request.user.firstname + " " + request.user.lastname
         place.text = request.place
-        image.image = UIImage(named: request.user.urlImage )
+      //  image.image = UIImage(named: request.user.urlImage )
         bloodGroup.setTitle(request.bloodGroup , for: .normal)
         number.setTitle("Unlock Chat", for: .normal)
-     //   imageSeason.af_setImage(withURL: URL(string: Seasons[indexPath.row].value(forKey: "imgName") as! String)!)
+        let imageUrl:URL = URL(string: request.user.urlImage)!
+        let imageData:NSData = NSData(contentsOf: imageUrl)!
+        let imageFinal = UIImage(data: imageData as Data)
+        image.layer.cornerRadius = image.frame.size.height/2
+        image.layer.borderWidth = 1
+        image.layer.borderColor = UIColor.black.cgColor
+        image.clipsToBounds = true
+
+        image.image = imageFinal
      //   nameSeason.text = Seasons[indexPath.row].value(forKey: "name") as! String
         return cell!
     }
@@ -89,6 +101,8 @@ class RequstsViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
     
 }

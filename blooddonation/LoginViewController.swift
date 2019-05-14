@@ -234,6 +234,7 @@ class LoginViewController: UIViewController,GIDSignInDelegate,GIDSignInUIDelegat
              self.firstname = user.profile.givenName
              self.lastname = user.profile.familyName
              self.email = user.profile.email
+             self.picture = user.profile.imageURL(withDimension: 128)!.absoluteString
             DonorService.isUserExist(id: self.userId, completion: { (success) in
                 
                 if(!success)
