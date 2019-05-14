@@ -32,6 +32,9 @@
 		CE44CA3B22722E6800FA6DDB /* UIPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44CA3A22722E6800FA6DDB /* UIPostCell.swift */; };
 		CE44CA3D2272498500FA6DDB /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44CA3C2272498500FA6DDB /* HomeController.swift */; };
 		CE44CA3F2272AC2E00FA6DDB /* AddPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44CA3E2272AC2E00FA6DDB /* AddPostController.swift */; };
+		CEFFE452228A34A10016674C /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFE451228A34A10016674C /* MessageCell.swift */; };
+		CEFFE454228A353D0016674C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFE453228A353D0016674C /* Message.swift */; };
+		CEFFE456228A61AD0016674C /* RecieverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFE455228A61AD0016674C /* RecieverCell.swift */; };
 		D2C8E7CC3E6DEEB3F9A138EC /* Pods_blooddonation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1F172B69D445DDC8E516C2 /* Pods_blooddonation.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +91,9 @@
 		CE44CA3A22722E6800FA6DDB /* UIPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPostCell.swift; sourceTree = "<group>"; };
 		CE44CA3C2272498500FA6DDB /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		CE44CA3E2272AC2E00FA6DDB /* AddPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostController.swift; sourceTree = "<group>"; };
+		CEFFE451228A34A10016674C /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		CEFFE453228A353D0016674C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CEFFE455228A61AD0016674C /* RecieverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieverCell.swift; sourceTree = "<group>"; };
 		D38D27A2540CA2D942CBBE58 /* Pods-blooddonation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blooddonation.release.xcconfig"; path = "Target Support Files/Pods-blooddonation/Pods-blooddonation.release.xcconfig"; sourceTree = "<group>"; };
 		FC1C72E4D981508992D9A16D /* Pods-blooddonationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blooddonationTests.debug.xcconfig"; path = "Target Support Files/Pods-blooddonationTests/Pods-blooddonationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC1F172B69D445DDC8E516C2 /* Pods_blooddonation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blooddonation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +191,8 @@
 				A9CA74FE22721E4D00524493 /* BecomeDonorViewController.swift */,
 				A9CA75092273031000524493 /* MapViewController.swift */,
 				A9B3732A22851A7B00D055DD /* RequestBloodController.swift */,
+				CEFFE451228A34A10016674C /* MessageCell.swift */,
+				CEFFE455228A61AD0016674C /* RecieverCell.swift */,
 				CE16A0A62289AE98006EFF5E /* ChatController.swift */,
 				A97CEDA922666E12008C674F /* Assets.xcassets */,
 				A97CEDAE22666E12008C674F /* Info.plist */,
@@ -217,6 +225,7 @@
 			children = (
 				A9CA74FC2272148F00524493 /* User.swift */,
 				CE44CA3722722CB100FA6DDB /* Post.swift */,
+				CEFFE453228A353D0016674C /* Message.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -531,10 +540,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9CA74FD2272148F00524493 /* User.swift in Sources */,
+				CEFFE452228A34A10016674C /* MessageCell.swift in Sources */,
 				CE44CA3B22722E6800FA6DDB /* UIPostCell.swift in Sources */,
 				CE44CA3D2272498500FA6DDB /* HomeController.swift in Sources */,
 				A9CA74F82271FF2400524493 /* LoginViewController.swift in Sources */,
 				A9B3732B22851A7B00D055DD /* RequestBloodController.swift in Sources */,
+				CEFFE456228A61AD0016674C /* RecieverCell.swift in Sources */,
+				CEFFE454228A353D0016674C /* Message.swift in Sources */,
 				A9CA750C2273143F00524493 /* CenterService.swift in Sources */,
 				A97CEDA522666E0F008C674F /* ViewController.swift in Sources */,
 				A9CA74FF22721E4D00524493 /* BecomeDonorViewController.swift in Sources */,
