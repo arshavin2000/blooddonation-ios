@@ -11,8 +11,14 @@ import UIKit
 class Message {
     
     var message:String?
-    init(message:String) {
+    var sender:String?
+    var reciever:String?
+    var postDate:CLong?
+    init(message:String, sender:String, reciever:String,postDate:CLong ) {
         self.message = message
+        self.sender = sender
+        self.reciever = reciever
+        self.postDate = postDate
     }
 
 }

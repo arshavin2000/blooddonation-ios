@@ -34,6 +34,11 @@
 		CE44CA3B22722E6800FA6DDB /* UIPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44CA3A22722E6800FA6DDB /* UIPostCell.swift */; };
 		CE44CA3D2272498500FA6DDB /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44CA3C2272498500FA6DDB /* HomeController.swift */; };
 		CE44CA3F2272AC2E00FA6DDB /* AddPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44CA3E2272AC2E00FA6DDB /* AddPostController.swift */; };
+		CEFFE45A228B84B50016674C /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFE457228B84B50016674C /* MessageCell.swift */; };
+		CEFFE45B228B84B50016674C /* RecieverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFE458228B84B50016674C /* RecieverCell.swift */; };
+		CEFFE45C228B84B50016674C /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFE459228B84B50016674C /* ChatController.swift */; };
+		CEFFE45E228B84D10016674C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFE45D228B84D10016674C /* Message.swift */; };
+		CEFFE4AD228B89480016674C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEFFE4AC228B89480016674C /* GoogleService-Info.plist */; };
 		F3451C3C643C4A4BADBCB2D7 /* Pods_blooddonationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0362A3C054AF7491E284D3B /* Pods_blooddonationTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +65,6 @@
 		58B8F8E987BABBE6AA15F9A4 /* Pods-blooddonationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blooddonationUITests.release.xcconfig"; path = "Target Support Files/Pods-blooddonationUITests/Pods-blooddonationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8CD19682EF092C3447511129 /* Pods-blooddonation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blooddonation.release.xcconfig"; path = "Target Support Files/Pods-blooddonation/Pods-blooddonation.release.xcconfig"; sourceTree = "<group>"; };
 		A0362A3C054AF7491E284D3B /* Pods_blooddonationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blooddonationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9406EFC228B7C24006C6805 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A9406EFE228B9C22006C6805 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		A97CED9F22666E0F008C674F /* blooddonation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blooddonation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97CEDA222666E0F008C674F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A97CEDA422666E0F008C674F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +98,11 @@
 		CE44CA3A22722E6800FA6DDB /* UIPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPostCell.swift; sourceTree = "<group>"; };
 		CE44CA3C2272498500FA6DDB /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		CE44CA3E2272AC2E00FA6DDB /* AddPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostController.swift; sourceTree = "<group>"; };
+		CEFFE457228B84B50016674C /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		CEFFE458228B84B50016674C /* RecieverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecieverCell.swift; sourceTree = "<group>"; };
+		CEFFE459228B84B50016674C /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		CEFFE45D228B84D10016674C /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CEFFE4AC228B89480016674C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,15 +189,18 @@
 				A97CEDA622666E0F008C674F /* Main.storyboard */,
 				A97CEDA222666E0F008C674F /* AppDelegate.swift */,
 				A9CA74F72271FF2400524493 /* LoginViewController.swift */,
-				CE44CA3A22722E6800FA6DDB /* UIPostCell.swift */,
-				CE44CA3E2272AC2E00FA6DDB /* AddPostController.swift */,
-				A9406EFC228B7C24006C6805 /* GoogleService-Info.plist */,
 				A97CEDA422666E0F008C674F /* ViewController.swift */,
 				CE44CA3C2272498500FA6DDB /* HomeController.swift */,
 				A9CA74FE22721E4D00524493 /* BecomeDonorViewController.swift */,
 				A9CA75092273031000524493 /* MapViewController.swift */,
 				A9B3732A22851A7B00D055DD /* RequestBloodController.swift */,
+				CE44CA3A22722E6800FA6DDB /* UIPostCell.swift */,
+				CEFFE459228B84B50016674C /* ChatController.swift */,
+				CEFFE457228B84B50016674C /* MessageCell.swift */,
+				CEFFE458228B84B50016674C /* RecieverCell.swift */,
+				CE44CA3E2272AC2E00FA6DDB /* AddPostController.swift */,
 				A97CEDA922666E12008C674F /* Assets.xcassets */,
+				CEFFE4AC228B89480016674C /* GoogleService-Info.plist */,
 				A97CEDAE22666E12008C674F /* Info.plist */,
 				A9CA750022721EDD00524493 /* blooddonation.xcdatamodeld */,
 				A9406EFE228B9C22006C6805 /* MoreViewController.swift */,
@@ -218,6 +229,7 @@
 		A9CA74FB2272147C00524493 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				CEFFE45D228B84D10016674C /* Message.swift */,
 				A9CA74FC2272148F00524493 /* User.swift */,
 				CE44CA3722722CB100FA6DDB /* Post.swift */,
 				A9A68CD92289E7B700A90C94 /* Request.swift */,
@@ -358,8 +370,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A97CEDAD22666E12008C674F /* LaunchScreen.storyboard in Resources */,
-				A9406EFD228B7C25006C6805 /* GoogleService-Info.plist in Resources */,
 				A97CEDAA22666E12008C674F /* Assets.xcassets in Resources */,
+				CEFFE4AD228B89480016674C /* GoogleService-Info.plist in Resources */,
 				A97CEDA822666E0F008C674F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,8 +549,10 @@
 				A9CA74F82271FF2400524493 /* LoginViewController.swift in Sources */,
 				A9B3732B22851A7B00D055DD /* RequestBloodController.swift in Sources */,
 				A9CA750C2273143F00524493 /* CenterService.swift in Sources */,
+				CEFFE45B228B84B50016674C /* RecieverCell.swift in Sources */,
 				A97CEDA522666E0F008C674F /* ViewController.swift in Sources */,
 				A9CA74FF22721E4D00524493 /* BecomeDonorViewController.swift in Sources */,
+				CEFFE45C228B84B50016674C /* ChatController.swift in Sources */,
 				A9CA750A2273031000524493 /* MapViewController.swift in Sources */,
 				A9CA750822727E3900524493 /* Utility.swift in Sources */,
 				A9CA750222721EDD00524493 /* blooddonation.xcdatamodeld in Sources */,
@@ -550,7 +564,9 @@
 				CE44CA3F2272AC2E00FA6DDB /* AddPostController.swift in Sources */,
 				A9A68CDA2289E7B700A90C94 /* Request.swift in Sources */,
 				A97CEDA322666E0F008C674F /* AppDelegate.swift in Sources */,
+				CEFFE45E228B84D10016674C /* Message.swift in Sources */,
 				CE44CA3822722CB100FA6DDB /* Post.swift in Sources */,
+				CEFFE45A228B84B50016674C /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

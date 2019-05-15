@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8224EFD39BE7C470070127F0B77FBDC6"
-               BuildableName = "InputBarAccessoryView.framework"
-               BlueprintName = "InputBarAccessoryView"
+               BlueprintIdentifier = "884BAE1384CFCD139B60928E711B40F6"
+               BuildableName = "FacebookShare.framework"
+               BlueprintName = "FacebookShare"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
