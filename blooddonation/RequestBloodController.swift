@@ -24,7 +24,10 @@ class RequestBloodController: UIViewController {
         super.viewDidLoad()
         print("didload")
         
-
+        DonorService.retrieveUser { (user) in
+            print("request", user)
+            self.name.text = user.firstname + " " + user.lastname
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -62,6 +65,10 @@ class RequestBloodController: UIViewController {
     }
     
     @IBAction func backBtn(_ sender: Any) {
+        DispatchQueue(label: "load").async(
+            execute: {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
+        })
         dismiss(animated: true, completion: nil)
     }
     @IBAction func submitAction(_ sender: Any) {
@@ -70,7 +77,8 @@ class RequestBloodController: UIViewController {
         DonorService.retrieveUser { (user) in
             print("request", user)
             RequestService.addRequest(user: user , bloodGroup: self.bloodGroup, city: self.city.text!)
-
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
+            self.city.text = ""
         }
     }
     /*

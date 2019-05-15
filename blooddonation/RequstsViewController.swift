@@ -23,7 +23,6 @@ class RequstsViewController: UIViewController, UITableViewDelegate, UITableViewD
         return 1;
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("hama1", requests.count)
         return requests.count;
     }
     
@@ -64,17 +63,30 @@ class RequstsViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
+
         RequestService.fetchRequest{(requests) in
             print("hama",requests.count)
             self.requests = requests
             self.tableview.reloadData()
-
-
-            
             
         }
+        NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
+        
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func loadList(notification: NSNotification){
+        //load data here
+        RequestService.fetchRequest{(requests) in
+            self.requests = requests
+        }
+        DispatchQueue.main.async(
+            execute:{self.tableview.reloadData()
+        }
+        )
     }
     
     override func viewDidAppear(_ animated: Bool) {

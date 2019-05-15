@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6ED5B26B9ACA9D7C77856D31 /* Pods_blooddonation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FE0B964136730529E7C359 /* Pods_blooddonation.framework */; };
 		A9406EFD228B7C25006C6805 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9406EFC228B7C24006C6805 /* GoogleService-Info.plist */; };
+		A9406EFF228B9C22006C6805 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9406EFE228B9C22006C6805 /* MoreViewController.swift */; };
 		A97CEDA322666E0F008C674F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97CEDA222666E0F008C674F /* AppDelegate.swift */; };
 		A97CEDA522666E0F008C674F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97CEDA422666E0F008C674F /* ViewController.swift */; };
 		A97CEDA822666E0F008C674F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97CEDA622666E0F008C674F /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		8CD19682EF092C3447511129 /* Pods-blooddonation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blooddonation.release.xcconfig"; path = "Target Support Files/Pods-blooddonation/Pods-blooddonation.release.xcconfig"; sourceTree = "<group>"; };
 		A0362A3C054AF7491E284D3B /* Pods_blooddonationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blooddonationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9406EFC228B7C24006C6805 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9406EFE228B9C22006C6805 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		A97CED9F22666E0F008C674F /* blooddonation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blooddonation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97CEDA222666E0F008C674F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A97CEDA422666E0F008C674F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				A97CEDA922666E12008C674F /* Assets.xcassets */,
 				A97CEDAE22666E12008C674F /* Info.plist */,
 				A9CA750022721EDD00524493 /* blooddonation.xcdatamodeld */,
+				A9406EFE228B9C22006C6805 /* MoreViewController.swift */,
 			);
 			path = blooddonation;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9406EFF228B9C22006C6805 /* MoreViewController.swift in Sources */,
 				A9CA74FD2272148F00524493 /* User.swift in Sources */,
 				CE44CA3B22722E6800FA6DDB /* UIPostCell.swift in Sources */,
 				CE44CA3D2272498500FA6DDB /* HomeController.swift in Sources */,

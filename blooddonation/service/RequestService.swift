@@ -54,7 +54,8 @@ class RequestService
                 print("JSON",JSON)
                 let requests = JSON as! NSArray
                 print("response",requests)
-                
+                if(requests.count>0)
+                {
                 for index in 0...requests.count - 1 {
                     
                     let request = requests[index] as! NSDictionary
@@ -87,7 +88,7 @@ class RequestService
                     
                     array.append(Center(address: address as? String, fax: fax as? String, tel: tel as? String , site: site as? String , name: name as? String))*/
                 }
-                
+                }
                 completion(array)
 
                 
