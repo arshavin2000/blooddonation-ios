@@ -12,7 +12,11 @@ import UIKit
 
 class MoreViewController: UITableViewController {
     
-    
+    @IBOutlet weak var score: UILabel!
+    @IBOutlet weak var nb_request: UILabel!
+    @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var image_profile: UIImageView!
+    @IBOutlet weak var name: UILabel!
     @IBOutlet var tableview: UITableView!
     var mores: [String] = ["Survey", "Logout"]
     
@@ -38,6 +42,24 @@ class MoreViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.separatorStyle = UITableViewCell.SeparatorStyle.none
+        
+        DonorService.retrieveUser { (user) in
+            print("request", user)
+            self.name.text = user.firstname + " " + user.lastname
+            self.email.text = user.email
+            self.image_profile.frame.size.width = 150
+            self.image_profile.frame.size.height = 150
+            
+            let imageUrl:URL = URL(string: user.urlImage)!
+            let imageData:NSData = NSData(contentsOf: imageUrl)!
+            let imageFinal = UIImage(data: imageData as Data)
+            self.image_profile.layer.cornerRadius = self.image_profile.frame.size.height/2
+            self.image_profile.layer.borderWidth = 1
+            self.image_profile.layer.borderColor = UIColor.black.cgColor
+            self.image_profile.clipsToBounds = true
+            self.image_profile.image = imageFinal
+            self.nb_request.text = String(SurveyFirstQuestionViewController.score)
+        }
         
         
         // Do any additional setup after loading the view.
