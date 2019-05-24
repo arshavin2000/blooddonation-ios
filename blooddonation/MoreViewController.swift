@@ -60,6 +60,7 @@ class MoreViewController: UITableViewController {
             self.image_profile.clipsToBounds = true
             self.image_profile.image = imageFinal
             self.nb_request.text = String(SurveyFirstQuestionViewController.score)
+            self.nb_request.text = String(RequestBloodController.nb)
         }
         
         

@@ -19,7 +19,7 @@ class RequestBloodController: UIViewController {
     
     var bloodGroup : String!
     
-    
+    static var nb = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         print("didload")
@@ -79,6 +79,7 @@ class RequestBloodController: UIViewController {
             RequestService.addRequest(user: user , bloodGroup: self.bloodGroup, city: self.city.text!)
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
             self.city.text = ""
+            RequestBloodController.nb+=1
         }
     }
     /*

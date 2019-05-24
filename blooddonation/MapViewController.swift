@@ -50,7 +50,7 @@ class MapViewController: UIViewController,MGLMapViewDelegate {
                     }
                 }
                 annotation.title = center.name
-                annotation.subtitle = center.address + "\n" + center.tel
+                annotation.subtitle = center.address
                 
                 mapView.addAnnotation(annotation)
             }

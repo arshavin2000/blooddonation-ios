@@ -67,6 +67,7 @@ class RequstsViewController: UIViewController, UITableViewDelegate, UITableViewD
             print("hama",requests.count)
             self.requests = requests
             self.tableview.reloadData()
+            self.nb_requests.text = String(self.requests.count)
             
         }
         NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)

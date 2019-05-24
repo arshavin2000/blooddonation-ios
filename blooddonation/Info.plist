@@ -49,7 +49,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MGLMapboxAccessToken</key>
-	<string>pk.eyJ1IjoiYXJzaGF2aW4xOTk0IiwiYSI6ImNqdTE5cXRmbjAxcWQ0M3FvemNpOTN1Y3gifQ.hLRw_Ff_yxJAlc8fPeFQQg</string>
+	<string>pk.eyJ1IjoiYXJzaGF2aW4xOTk0IiwiYSI6ImNqdzFsdTl4ZjBsNXAzeXBsNmR6Z3lodGcifQ.IDfZb7aS5Zf0aeF7Ttxg4Q</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Shows your location on the map and helps improve OpenStreetMap.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
