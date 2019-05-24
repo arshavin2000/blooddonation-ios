@@ -47,7 +47,7 @@
 		<string>fbshareextension</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
-	<true/>
+	<false/>
 	<key>MGLMapboxAccessToken</key>
 	<string>pk.eyJ1IjoiYXJzaGF2aW4xOTk0IiwiYSI6ImNqdzFsdTl4ZjBsNXAzeXBsNmR6Z3lodGcifQ.IDfZb7aS5Zf0aeF7Ttxg4Q</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
@@ -77,5 +77,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
 </dict>
 </plist>
