@@ -88,6 +88,8 @@ class DonorService
          print("Could not save. \(error), \(error.userInfo)")
          }*/
         
+        appDelegate.saveContext();
+        
     }
     
     static func isUserExist(id: String, completion:@escaping (Bool) -> ()) -> Void {

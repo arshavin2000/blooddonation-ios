@@ -15,8 +15,9 @@ import FacebookCore
 
 class MoreViewController: UITableViewController {
     
-    @IBOutlet weak var score: UILabel!
     @IBOutlet weak var nb_request: UILabel!
+    
+    @IBOutlet weak var score: UILabel!
     @IBOutlet weak var email: UILabel!
     @IBOutlet weak var image_profile: UIImageView!
     @IBOutlet weak var name: UILabel!
@@ -59,7 +60,8 @@ class MoreViewController: UITableViewController {
             self.image_profile.layer.borderColor = UIColor.black.cgColor
             self.image_profile.clipsToBounds = true
             self.image_profile.image = imageFinal
-            self.nb_request.text = String(SurveyFirstQuestionViewController.score)
+            print("scorescore", String(SurveyFirstQuestionViewController.score))
+            self.score.text = String(SurveyFirstQuestionViewController.score)
             self.nb_request.text = String(RequestBloodController.nb)
         }
         

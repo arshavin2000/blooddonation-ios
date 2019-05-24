@@ -32,10 +32,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         if ((AccessToken.current) != nil || GIDSignIn.sharedInstance().hasAuthInKeychain()) {
+            print("kais")
+            DonorService.retrieveUser { (user) in
+                
+                print("terminal", user.lastname)
+            }
+
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             let home = storyBoard.instantiateViewController(withIdentifier: "nav") as! UITabBarController
             self.window?.rootViewController = home
             self.window?.makeKeyAndVisible()
+            
         } else {
             
                 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
