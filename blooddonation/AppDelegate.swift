@@ -31,6 +31,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Override point for customization after application launch.
         
+        if ((AccessToken.current) != nil || GIDSignIn.sharedInstance().hasAuthInKeychain()) {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let home = storyBoard.instantiateViewController(withIdentifier: "nav") as! UITabBarController
+            self.window?.rootViewController = home
+            self.window?.makeKeyAndVisible()
+        } else {
+            
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let loginViewController = storyBoard.instantiateViewController(withIdentifier: "login") as! LoginViewController
+                self.window?.rootViewController = loginViewController
+                self.window?.makeKeyAndVisible()
+            
+        }
+        
         
         
         FirebaseApp.configure()

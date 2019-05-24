@@ -37,9 +37,7 @@ class RequstsViewController: UIViewController, UITableViewDelegate, UITableViewD
         let bloodGroup = contentview?.viewWithTag(5) as! UIButton
 
         let image = contentview?.viewWithTag(1) as! UIImageView
-        image.frame.size.width = 150
-        image.frame.size.height = 150
-
+        
         let request = requests[indexPath.row]
         name.text = request.user.firstname + " " + request.user.lastname
         place.text = request.place
