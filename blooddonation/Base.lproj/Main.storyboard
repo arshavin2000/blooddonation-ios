@@ -916,9 +916,9 @@
                                                 <rect key="frame" x="0.0" y="165" width="415" height="495"/>
                                                 <subviews>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hdo-cJ-Njg">
-                                                        <rect key="frame" x="104" y="233.5" width="207" height="29"/>
+                                                        <rect key="frame" x="104" y="234" width="222" height="29"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="207" id="9ZJ-wd-R68"/>
+                                                            <constraint firstAttribute="width" constant="222" id="9ZJ-wd-R68"/>
                                                         </constraints>
                                                         <segments>
                                                             <segment title="Yes"/>
@@ -940,7 +940,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="W4L-pE-bW2" secondAttribute="bottom" constant="111.5" id="11A-jz-e04"/>
                                                     <constraint firstItem="hdo-cJ-Njg" firstAttribute="centerY" secondItem="bey-GR-YLb" secondAttribute="centerY" id="9pA-ew-4qr"/>
-                                                    <constraint firstItem="hdo-cJ-Njg" firstAttribute="centerX" secondItem="bey-GR-YLb" secondAttribute="centerX" id="WVa-6w-diT"/>
+                                                    <constraint firstItem="hdo-cJ-Njg" firstAttribute="centerX" secondItem="bey-GR-YLb" secondAttribute="centerX" constant="7.5" id="WVa-6w-diT"/>
                                                     <constraint firstItem="W4L-pE-bW2" firstAttribute="centerX" secondItem="bey-GR-YLb" secondAttribute="centerX" constant="0.25" id="ofF-iW-KYr"/>
                                                 </constraints>
                                             </view>
@@ -1913,7 +1913,7 @@ Blood donation is fundamental to a nation's health care system.</string>
         <image name="white_btn" width="177" height="59"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="L28-BC-gag"/>
+        <segue reference="GKi-Sy-VNk"/>
         <segue reference="aRE-VX-3hQ"/>
     </inferredMetricsTieBreakers>
 </document>

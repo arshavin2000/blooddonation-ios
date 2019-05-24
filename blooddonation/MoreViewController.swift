@@ -61,7 +61,17 @@ class MoreViewController: UITableViewController {
             self.image_profile.clipsToBounds = true
             self.image_profile.image = imageFinal
             print("scorescore", String(SurveyFirstQuestionViewController.score))
-            self.score.text = String(SurveyFirstQuestionViewController.score)
+            let preferences = UserDefaults.standard
+            
+            let currentLevelKey = "score"
+            
+            if preferences.object(forKey: currentLevelKey) == nil {
+                //  Doesn't exist
+            } else {
+                let currentLevel = preferences.integer(forKey: currentLevelKey)
+                self.score.text = String(currentLevel)
+
+            }
             self.nb_request.text = String(RequestBloodController.nb)
         }
         

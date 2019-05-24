@@ -23,6 +23,15 @@ class SurveyFifthQuestionViewController: UIViewController {
             SurveyFirstQuestionViewController.score+=2;
             
         }
+        
+        let preferences = UserDefaults.standard
+        
+        let currentLevelKey = "score"
+        
+        preferences.set(SurveyFirstQuestionViewController.score, forKey: currentLevelKey)
+        
+        //  Save to disk
+         preferences.synchronize()
         print("score" ,SurveyFirstQuestionViewController.score )
 
     }
