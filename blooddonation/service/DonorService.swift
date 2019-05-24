@@ -171,6 +171,36 @@ class DonorService
             print("Failed")
         }
     }
+    
+    static func deleteUSer(){
+        
+        
+        let appdelegate = UIApplication.shared.delegate as! AppDelegate
+        let persistanceContainer = appdelegate.persistentContainer
+        let managedContext = persistanceContainer.viewContext
+        _ = NSEntityDescription.entity(forEntityName: "Users", in: managedContext)
+        
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+        do{
+            let result = try managedContext.fetch(request)
+            if(result.count > 0){
+                do{
+                    
+                    managedContext.delete(result[0] as! NSManagedObject)
+                    try managedContext.save()
+                    print("insert ok")
+                    
+                }catch{
+                    _ = error as NSError
+                }
+            }
+            
+        }catch{
+            _ = error as NSError
+        }
+        
+    }
 }
 
     

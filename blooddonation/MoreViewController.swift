@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import GoogleSignIn
+import FacebookLogin
+import FacebookCore
 
 
 
@@ -47,8 +50,6 @@ class MoreViewController: UITableViewController {
             print("request", user)
             self.name.text = user.firstname + " " + user.lastname
             self.email.text = user.email
-            self.image_profile.frame.size.width = 150
-            self.image_profile.frame.size.height = 150
             
             let imageUrl:URL = URL(string: user.urlImage)!
             let imageData:NSData = NSData(contentsOf: imageUrl)!
@@ -72,7 +73,18 @@ class MoreViewController: UITableViewController {
         case 0: //For "one"
             segueIdentifier = "survey"
         case 1: //For "two"
-            segueIdentifier = "survey"
+            segueIdentifier = "logout"
+            if GIDSignIn.sharedInstance().hasAuthInKeychain()
+            {
+            GIDSignIn.sharedInstance().signOut()
+            DonorService.deleteUSer();
+            }else{
+
+                let loginManager=LoginManager()
+                loginManager.logOut()
+            }
+            
+
         default: //For "three"
             segueIdentifier = "survey"
         }

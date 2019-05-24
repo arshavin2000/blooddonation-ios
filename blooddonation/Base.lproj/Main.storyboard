@@ -249,13 +249,11 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="367"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-not-available" translatesAutoresizingMaskIntoConstraints="NO" id="HhP-ou-sCJ">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="253" verticalHuggingPriority="253" image="image-not-available" translatesAutoresizingMaskIntoConstraints="NO" id="HhP-ou-sCJ">
                                     <rect key="frame" x="157" y="31" width="100" height="100"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="100" id="1UZ-nD-uhp"/>
-                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="5DI-CL-I0q"/>
                                         <constraint firstAttribute="width" constant="100" id="9Y4-Av-7lL"/>
-                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="nDr-0y-xfm"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="achref.meghirbi@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="802-Ia-DHl">
@@ -364,6 +362,7 @@
                         <outlet property="score" destination="VfX-vC-Nuu" id="C1a-Aj-IJF"/>
                         <outlet property="tableview" destination="zXp-KM-hE0" id="U35-3b-yy7"/>
                         <segue destination="Xtx-2d-bfE" kind="show" identifier="survey" id="L28-BC-gag"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="logout" id="A3f-xC-0gj"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1w-sn-p4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
