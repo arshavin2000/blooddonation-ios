@@ -20,7 +20,7 @@ class SurveyFifthQuestionViewController: UIViewController {
     @IBAction func surveyAction(_ sender: Any) {
          if(survey.selectedSegmentIndex == 2 || survey.selectedSegmentIndex == 3)
         {
-            SurveyFirstQuestionViewController.score+=2;
+            SurveyFirstQuestionViewController.score+=7;
             
         }
         
