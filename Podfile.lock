@@ -109,6 +109,7 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - SMSegmentView (1.3.1)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
@@ -122,6 +123,7 @@ DEPENDENCIES:
   - Firebase/Database
   - GoogleSignIn
   - Mapbox-iOS-SDK (~> 4.10)
+  - SMSegmentView
   - SwiftyJSON
 
 SPEC REPOS:
@@ -150,6 +152,7 @@ SPEC REPOS:
     - leveldb-library
     - Mapbox-iOS-SDK
     - nanopb
+    - SMSegmentView
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -177,8 +180,9 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   Mapbox-iOS-SDK: 8b1b777de7de373cdf000994c91af101ef886477
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  SMSegmentView: 3c3aa59206a67a7c8a9e05593f84aa875eddeeba
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: b754760a01989f625d2c284cafd3c85db68440ce
+PODFILE CHECKSUM: e7997afb300f82427410aece1b5f1648908620eb
 
 COCOAPODS: 1.6.1

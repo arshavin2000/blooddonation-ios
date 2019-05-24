@@ -27,31 +27,44 @@ class MoreViewController: UITableViewController {
         let contentview = cell?.viewWithTag(0)
         
         let name = contentview?.viewWithTag(1) as! UILabel
-
+        
         name.text = mores[indexPath.row]
         
         return cell!
-
+        
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.separatorStyle = UITableViewCell.SeparatorStyle.none
-
-
+        
+        
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let segueIdentifier: String
+        switch indexPath.row {
+        case 0: //For "one"
+            segueIdentifier = "survey"
+        case 1: //For "two"
+            segueIdentifier = "survey"
+        default: //For "three"
+            segueIdentifier = "survey"
+        }
+        self.performSegue(withIdentifier: segueIdentifier, sender: self)
     }
-    */
-
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
