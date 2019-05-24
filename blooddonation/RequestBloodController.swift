@@ -80,6 +80,14 @@ class RequestBloodController: UIViewController {
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
             self.city.text = ""
             RequestBloodController.nb+=1
+            let preferences = UserDefaults.standard
+            
+            let currentLevelKey = "nb"
+            
+            preferences.set(RequestBloodController.nb, forKey: currentLevelKey)
+            
+            //  Save to disk
+            preferences.synchronize()
         }
     }
     /*

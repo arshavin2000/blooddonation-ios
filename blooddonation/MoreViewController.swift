@@ -64,6 +64,8 @@ class MoreViewController: UITableViewController {
             let preferences = UserDefaults.standard
             
             let currentLevelKey = "score"
+            let currentLevelKey1 = "nbn"
+
             
             if preferences.object(forKey: currentLevelKey) == nil {
                 //  Doesn't exist
@@ -72,7 +74,13 @@ class MoreViewController: UITableViewController {
                 self.score.text = String(currentLevel)
 
             }
-            self.nb_request.text = String(RequestBloodController.nb)
+            if preferences.object(forKey: currentLevelKey1) == nil {
+                //  Doesn't exist
+            } else {
+                let currentLevel1 = preferences.integer(forKey: currentLevelKey1)
+                self.nb_request.text = String(currentLevel1)
+
+            }
         }
         
         
